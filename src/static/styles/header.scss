@@ -66,10 +66,16 @@
           &:hover {
             color: red;
           }
+
+          &:active {
+            background-color: grey;
+          }
         }
       }
 
       .nav-bar-social-wrapper {
+        display: flex;
+        justify-content: space-between;
         width: 10vw;
         min-width: 75px;
         padding-right: 20px;
