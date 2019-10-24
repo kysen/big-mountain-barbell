@@ -1,5 +1,4 @@
 import React from "react";
-import { logicalExpression } from "@babel/types";
 
 const Navbar = () => {
   const logo = require("../static/images/big-mountain-barbell-logo.jpg");
