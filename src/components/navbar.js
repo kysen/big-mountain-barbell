@@ -1,7 +1,7 @@
 import React from "react";
 import { logicalExpression } from "@babel/types";
 
-const Navbar = () => {
+const Navbar = props => {
   const logo = require("../static/images/big-mountain-barbell-logo.jpg");
 
   return (
@@ -16,25 +16,74 @@ const Navbar = () => {
         </div>
 
         <div className="nav-bar-buttons-wrapper">
-          <button className="nav-bar-button">Home</button>
-          <button className="nav-bar-button">About</button>
-          <button className="nav-bar-button">Memberships</button>
-          <button className="nav-bar-button">Facility</button>
-          <button className="nav-bar-button">Services</button>
-          <button className="nav-bar-button">Coaches</button>
-          <button className="nav-bar-button">Contact Us</button>
+          <button
+            className={`nav-bar-button ${
+              props.page === "home" ? "active" : ""
+            }`}
+            onClick={() => props.setPage("home")}
+          >
+            Home
+          </button>
+
+          <button
+            className={`nav-bar-button ${
+              props.page === "home" ? "active" : ""
+            }`}
+            onClick={() => props.setPage("home")}
+          >
+            About
+          </button>
+
+          <button
+            className={`nav-bar-button ${
+              props.page === "memberships" ? "active" : ""
+            }`}
+            onClick={() => props.setPage("memberships")}
+          >
+            Memberships
+          </button>
+
+          <button
+            className={`nav-bar-button ${
+              props.page === "facility" ? "active" : ""
+            }`}
+            onClick={() => props.setPage("facility")}
+          >
+            Facility
+          </button>
+
+          <button
+            className={`nav-bar-button ${
+              props.page === "services" ? "active" : ""
+            }`}
+            onClick={() => props.setPage("services")}
+          >
+            Services
+          </button>
+
+          <button
+            className={`nav-bar-button ${
+              props.page === "coaches" ? "active" : ""
+            }`}
+            onClick={() => props.setPage("coaches")}
+          >
+            Coaches
+          </button>
+
+          <button
+            className={`nav-bar-button ${
+              props.page === "contact" ? "active" : ""
+            }`}
+            onClick={() => props.setPage("contact")}
+          >
+            Contact Us
+          </button>
         </div>
 
         <div className="nav-bar-social-wrapper">
-          <div className="facebook">
-facebook
-          </div>
-          <div className="instagram">
-instagram
-          </div>
-          <div className="twitter">
-twitter
-          </div>
+          <div className="facebook">facebook</div>
+          <div className="instagram">instagram</div>
+          <div className="twitter">twitter</div>
         </div>
       </nav>
     </div>
