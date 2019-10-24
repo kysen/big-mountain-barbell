@@ -1,8 +1,10 @@
 import React from "react";
 import { logicalExpression } from "@babel/types";
+import { useNavigation, useNavigationParam } from "react-navigation-hooks";
 
 const Navbar = props => {
   const logo = require("../static/images/big-mountain-barbell-logo.jpg");
+  const { navigate } = useNavigation();
 
   return (
     <div className="nav-bar-wrapper">
@@ -16,12 +18,7 @@ const Navbar = props => {
         </div>
 
         <div className="nav-bar-buttons-wrapper">
-          <button
-            className={`nav-bar-button ${
-              props.page === "home" ? "active" : ""
-            }`}
-            onClick={() => props.setPage("home")}
-          >
+          <button className="nav-bar-button" onClick={() => navigate("Home")}>
             Home
           </button>
 
