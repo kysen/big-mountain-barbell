@@ -25,7 +25,17 @@ const Navbar = () => {
           <button className="nav-bar-button">Contact Us</button>
         </div>
 
-        <div className="nav-bar-social-wrapper"></div>
+        <div className="nav-bar-social-wrapper">
+          <div className="facebook">
+facebook
+          </div>
+          <div className="instagram">
+instagram
+          </div>
+          <div className="twitter">
+twitter
+          </div>
+        </div>
       </nav>
     </div>
   );
