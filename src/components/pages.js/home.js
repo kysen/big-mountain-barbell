@@ -1,9 +1,13 @@
 import React from "react";
 import ContactUs from "./contact";
+import HypeVideo from "./home-components/hype-video";
+import vid from "../../static/videos/final-BMB.mp4";
 
 const Home = props => {
   return (
     <div className="home-container">
+      {/* <HypeVideo /> */}
+      {/* <video src={vid} autoPlay /> */}
       <div className="scrolling-pictures">scrolling-pictures</div>
       <div className="home-page-quote">
         "Our mission is to provide safe, efficient, effective and balanced
