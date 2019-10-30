@@ -1,11 +1,10 @@
 import React from "react";
-import "./static/styles/main.scss";
+import "./assets/styles/main.scss";
 import Header from "./components/header";
 import Home from "./components/pages.js/home.js";
 
 const App = () => {
   const phoneNumber = "(801) 673-1383";
-  const [page, setPage] = React.useState("home");
 
   return (
     <div className="App">
