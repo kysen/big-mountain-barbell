@@ -1,9 +1,9 @@
 import React from "react";
-// import { useNavigation, useNavigationParam } from "react-navigation-hooks";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = props => {
   const logo = require("../static/images/big-mountain-barbell-logo.jpg");
-  // const { navigate } = useNavigation();
 
   return (
     <div className="nav-bar-wrapper">
@@ -17,10 +17,6 @@ const Navbar = props => {
         </div>
 
         <div className="nav-bar-buttons-wrapper">
-          {/* <button className="nav-bar-button" onClick={() => navigate("Home")}>
-            Home
-          </button> */}
-
           <button
             className={`nav-bar-button ${
               props.page === "home" ? "active" : ""
@@ -77,9 +73,15 @@ const Navbar = props => {
         </div>
 
         <div className="nav-bar-social-wrapper">
-          <div className="facebook">facebook</div>
-          <div className="instagram">instagram</div>
-          <div className="twitter">twitter</div>
+          <a href="" className="icon-wrapper">
+            <FontAwesomeIcon icon={faCoffee} className="icon" />
+          </a>
+          <a href="" className="icon-wrapper">
+            <FontAwesomeIcon icon={faCoffee} className="icon" />
+          </a>
+          <a href="" className="icon-wrapper">
+            <FontAwesomeIcon icon={faCoffee} className="icon" />
+          </a>
         </div>
       </nav>
     </div>
