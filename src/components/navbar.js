@@ -1,9 +1,7 @@
 import React from "react";
-// import { useNavigation, useNavigationParam } from "react-navigation-hooks";
 
 const Navbar = props => {
   const logo = require("../static/images/big-mountain-barbell-logo.jpg");
-  // const { navigate } = useNavigation();
 
   return (
     <div className="nav-bar-wrapper">
@@ -17,19 +15,22 @@ const Navbar = props => {
         </div>
 
         <div className="nav-bar-buttons-wrapper">
-          {/* <button className="nav-bar-button" onClick={() => navigate("Home")}>
-            Home
-          </button> */}
-
           <button
             className={`nav-bar-button ${
               props.page === "home" ? "active" : ""
             }`}
             onClick={() => props.setPage("home")}
           >
+            Home
+          </button>
+          <button
+            className={`nav-bar-button ${
+              props.page === "about" ? "active" : ""
+            }`}
+            onClick={() => props.setPage("about")}
+          >
             About
           </button>
-
           <button
             className={`nav-bar-button ${
               props.page === "memberships" ? "active" : ""
@@ -38,7 +39,6 @@ const Navbar = props => {
           >
             Memberships
           </button>
-
           <button
             className={`nav-bar-button ${
               props.page === "facility" ? "active" : ""
@@ -47,7 +47,6 @@ const Navbar = props => {
           >
             Facility
           </button>
-
           <button
             className={`nav-bar-button ${
               props.page === "services" ? "active" : ""
@@ -56,7 +55,6 @@ const Navbar = props => {
           >
             Services
           </button>
-
           <button
             className={`nav-bar-button ${
               props.page === "coaches" ? "active" : ""
@@ -64,15 +62,6 @@ const Navbar = props => {
             onClick={() => props.setPage("coaches")}
           >
             Coaches
-          </button>
-
-          <button
-            className={`nav-bar-button ${
-              props.page === "contact" ? "active" : ""
-            }`}
-            onClick={() => props.setPage("contact")}
-          >
-            Contact Us
           </button>
         </div>
 
