@@ -5,7 +5,6 @@ import Home from "./components/pages.js/home.js";
 
 const App = () => {
   const phoneNumber = "(801) 673-1383";
-  const [page, setPage] = React.useState("home");
 
   return (
     <div className="App">

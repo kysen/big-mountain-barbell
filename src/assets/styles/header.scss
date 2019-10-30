@@ -16,8 +16,12 @@
   .nav-bar-wrapper {
     width: 100%;
     min-width: 715px;
+    display: flex;
+    justify-content: center;
+
     .nav-bar {
       height: 125px;
+      width: 80vw;
       display: flex;
       justify-content: center;
 
@@ -53,23 +57,29 @@
       .nav-bar-buttons-wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 80vw;
         padding-right: 80px;
         padding-left: 80px;
+        transition: 0.4 s ease-in-out;
 
         .nav-bar-button {
+          font-size: 1.2em;
           border: none;
           outline: none;
           background: none;
-          transition: 0.2s;
+          transition: 0.3s ease-in-out;
+          padding: 10px 20px;
+          height: 50px;
 
           &:hover {
-            color: red;
+            background-color: #aaaaaa;
           }
+        }
 
-          &:active {
-            background-color: grey;
-          }
+        .active {
+          background-color: $primaryColor;
+          color: #fff;
         }
       }
 
