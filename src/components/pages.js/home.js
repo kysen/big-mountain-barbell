@@ -1,7 +1,7 @@
 import React from "react";
 import ContactUs from "./contact";
 import HypeVideo from "./home-components/hype-video";
-import vid from "../../static/videos/final-BMB.mp4";
+import vid from "../../assets/videos/final-BMB.mp4";
 
 const Home = props => {
   return (

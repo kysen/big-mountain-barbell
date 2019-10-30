@@ -2,7 +2,7 @@ import React from "react";
 // import { useNavigation, useNavigationParam } from "react-navigation-hooks";
 
 const Navbar = props => {
-  const logo = require("../static/images/big-mountain-barbell-logo.jpg");
+  const logo = require("../assets/images/big-mountain-barbell-logo.jpg");
   // const { navigate } = useNavigation();
 
   return (
