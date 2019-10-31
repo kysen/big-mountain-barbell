@@ -73,13 +73,28 @@ const Navbar = props => {
         </div>
 
         <div className="nav-bar-social-wrapper">
-          <a href="" className="icon-wrapper">
+          <a
+            href="https://www.facebook.com/bigmountainbarbell/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-wrapper"
+          >
             <FontAwesomeIcon icon={["fab", "facebook-f"]} className="icon" />
           </a>
-          <a href="" className="icon-wrapper">
+          <a
+            href="https://www.instagram.com/bigmountainbarbell/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-wrapper"
+          >
             <FontAwesomeIcon icon={["fab", "instagram"]} className="icon" />
           </a>
-          <a href="" className="icon-wrapper">
+          <a
+            href="https://www.youtube.com/channel/UCETBMt6vwzcI-cjxvk-rKVQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-wrapper"
+          >
             <FontAwesomeIcon icon={["fab", "youtube"]} className="icon" />
           </a>
         </div>
