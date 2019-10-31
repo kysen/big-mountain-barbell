@@ -21,18 +21,19 @@
 
     .nav-bar {
       height: 125px;
-      width: 80vw;
+      width: 85vw;
       display: flex;
       justify-content: center;
 
       .nav-bar-logo-wrapper {
-        width: 10vw;
+        width: 10%;
         min-width: 125px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-left: 20px;
+        padding-right: 20px;
 
         .nav-bar-logo {
           display: flex;
@@ -58,9 +59,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 80vw;
-        padding-right: 80px;
-        padding-left: 80px;
+        width: 80%;
+        padding-right: 40px;
+        padding-left: 40px;
         transition: 0.4 s ease-in-out;
 
         .nav-bar-button {
@@ -87,9 +88,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 10vw;
+        width: 20%;
         min-width: 75px;
         padding-right: 20px;
+
+        .icon-wrapper {
+          width: calc(100% / 3);
+          display: flex;
+          justify-content: center;
+
+          .icon {
+            font-size: 2em;
+            transition: 0.2s ease-in-out;
+            color: #000000;
+            &:hover {
+              font-size: 2.2em;
+              transform: rotate(20deg);
+            }
+          }
+        }
       }
     }
   }

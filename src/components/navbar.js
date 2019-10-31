@@ -1,6 +1,10 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(fab, faCoffee);
 
 const Navbar = props => {
   const logo = require("../assets/images/big-mountain-barbell-logo.jpg");
@@ -70,13 +74,13 @@ const Navbar = props => {
 
         <div className="nav-bar-social-wrapper">
           <a href="" className="icon-wrapper">
-            <FontAwesomeIcon icon={faCoffee} className="icon" />
+            <FontAwesomeIcon icon={["fab", "facebook-f"]} className="icon" />
           </a>
           <a href="" className="icon-wrapper">
-            <FontAwesomeIcon icon={faCoffee} className="icon" />
+            <FontAwesomeIcon icon={["fab", "instagram"]} className="icon" />
           </a>
           <a href="" className="icon-wrapper">
-            <FontAwesomeIcon icon={faCoffee} className="icon" />
+            <FontAwesomeIcon icon={["fab", "youtube"]} className="icon" />
           </a>
         </div>
       </nav>
