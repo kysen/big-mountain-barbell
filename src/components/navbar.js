@@ -1,4 +1,10 @@
 import React from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(fab, faCoffee);
 
 const Navbar = props => {
   const logo = require("../assets/images/big-mountain-barbell-logo.jpg");
@@ -67,9 +73,30 @@ const Navbar = props => {
         </div>
 
         <div className="nav-bar-social-wrapper">
-          <div className="facebook">facebook</div>
-          <div className="instagram">instagram</div>
-          <div className="twitter">twitter</div>
+          <a
+            href="https://www.facebook.com/bigmountainbarbell/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-wrapper"
+          >
+            <FontAwesomeIcon icon={["fab", "facebook-f"]} className="icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/bigmountainbarbell/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-wrapper"
+          >
+            <FontAwesomeIcon icon={["fab", "instagram"]} className="icon" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCETBMt6vwzcI-cjxvk-rKVQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-wrapper"
+          >
+            <FontAwesomeIcon icon={["fab", "youtube"]} className="icon" />
+          </a>
         </div>
       </nav>
     </div>
