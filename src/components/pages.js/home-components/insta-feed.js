@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 
+import InstaItem from "./insta-item";
+
 const InstaFeed = () => {
   const [postsArray, setPostsArray] = useState([]);
+
   var ig = require("instagram-scraping");
 
   useEffect(() => {
@@ -15,14 +18,12 @@ const InstaFeed = () => {
     return postsArray.map((current, index) => {
       // TODO sort by date
       return (
-        <div className="post-wrapper" key={index}>
-          <img
-            resizeMode="contain"
-            src={current.display_url}
-            alt={current.shortcode}
-          ></img>
-          <div className="post-text">{current.text}</div>
-        </div>
+        <InstaItem
+          key={index}
+          display_url={current.display_url}
+          shortcode={current.shortcode}
+          text={current.text}
+        />
       );
     });
   };

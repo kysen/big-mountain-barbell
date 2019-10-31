@@ -42,13 +42,19 @@
         img {
           width: 20vw;
           height: 20vw;
+          transition: 0.3s ease-in-out;
         }
         .post-text {
+          transition: 0.4s ease-in-out;
+
           position: absolute;
           z-index: 2;
           width: 15vw;
           height: 15vw;
           color: white;
+
+          display: flex;
+          align-items: center;
           // margin: 20px 0px;
           // visibility: hidden;
         }
