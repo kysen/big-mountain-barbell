@@ -12,7 +12,6 @@
     "react-dom": "^16.11.0",
     "react-fontawesome": "^1.6.1",
     "react-navigation-hooks": "^1.1.0",
-    "react-player": "^1.13.0",
     "react-scripts": "3.2.0"
   },
   "scripts": {
