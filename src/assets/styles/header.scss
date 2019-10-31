@@ -39,6 +39,7 @@
           display: flex;
           justify-content: center;
           height: 60%;
+          pointer-events: none;
         }
 
         .nav-bar-logo-heading-wrapper {
@@ -51,6 +52,7 @@
           .nav-bar-logo-heading {
             font-size: 13px;
             font-weight: lighter;
+            pointer-events: none;
           }
         }
       }
