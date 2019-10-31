@@ -9,6 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.7",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
+    "react-burger-menu": "^2.6.11",
     "react-dom": "^16.11.0",
     "react-fontawesome": "^1.6.1",
     "react-navigation-hooks": "^1.1.0",
