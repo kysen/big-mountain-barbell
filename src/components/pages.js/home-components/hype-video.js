@@ -1,27 +1,17 @@
-// import React from "react";
-// import ReactPlayer from "react-player";
+import React, { useEffect, useRef } from "react";
+import vid from "../../../assets/videos/hype-vid-silent-3rd.mp4";
 
-// const HypeVideo = () => {
-//   return (
-//     <div className="hype-video-container">
-//       <ReactPlayer
-//         url="https://www.youtube.com/watch?v=Svmyj56TqrQ"
-//         config={{
-//           youtube: {
-//             playerVars: {
-//               disablekb: true,
-//               modestbranding: 1
-//             }
-//           }
-//         }}
-//         playing
-//         loop
-//         volume={0}
-//         width="100vw"
-//         height="800px"
-//       />
-//     </div>
-//   );
-// };
+const HypeVideo = () => {
+  const vidRef = useRef();
+  useEffect(() => {
+    console.log(vidRef.current);
+    vidRef.current.play();
+  }, []);
+  return (
+    <div className="hype-video-container">
+      <video ref={vidRef} src={vid} loop muted />
+    </div>
+  );
+};
 
-// export default HypeVideo;
+export default HypeVideo;
