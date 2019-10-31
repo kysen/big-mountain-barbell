@@ -7,7 +7,7 @@ const Home = props => {
   return (
     <div className="home-container">
       {/* <HypeVideo /> */}
-      <video src={vid} preload="auto" autoPlay />
+      <video src={vid} autoPlay loop />
       <div className="scrolling-pictures">scrolling-pictures</div>
       <div className="home-page-quote">
         "Our mission is to provide safe, efficient, effective and balanced
