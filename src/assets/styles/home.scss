@@ -39,6 +39,10 @@
         height: 20vw;
         margin: 20px;
 
+        &:hover {
+          cursor: pointer;
+        }
+
         img {
           width: 20vw;
           height: 20vw;

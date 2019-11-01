@@ -3,11 +3,16 @@ import React, { useState } from "react";
 import EllipsisText from "react-ellipsis-text";
 const InstaItem = props => {
   const [mouseOn, setMouseOn] = useState(false);
+
+  const handleClick = () => {
+    window.location.href = `https://www.instagram.com/p/${props.shortcode}/`;
+  };
   return (
     <div
       className="post-wrapper"
       onMouseEnter={() => setMouseOn(true)}
       onMouseLeave={() => setMouseOn(false)}
+      onClick={() => handleClick()}
     >
       <img
         resizeMode="contain"
