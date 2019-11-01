@@ -1,4 +1,5 @@
-@import "./variables.scss";
+@import "variables.scss";
+@import "mixins.scss";
 
 .header-wrapper {
   .heading-wrapper {
@@ -34,11 +35,13 @@
         align-items: center;
         padding-left: 20px;
         padding-right: 20px;
+        @include no-select();
 
         .nav-bar-logo {
           display: flex;
           justify-content: center;
           height: 60%;
+          pointer-events: none;
         }
 
         .nav-bar-logo-heading-wrapper {
@@ -51,6 +54,7 @@
           .nav-bar-logo-heading {
             font-size: 13px;
             font-weight: lighter;
+            pointer-events: none;
           }
         }
       }
@@ -72,6 +76,7 @@
           transition: 0.3s ease-in-out;
           padding: 10px 20px;
           height: 50px;
+          cursor: pointer;
 
           &:hover {
             background-color: #aaaaaa;
