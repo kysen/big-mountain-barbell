@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -12,12 +12,29 @@ library.add(fab, faCoffee);
 
 const Navbar = props => {
   const logo = require("../assets/images/big-mountain-barbell-logo.jpg");
+  const [scrollTrigger, setScrollTrigger] = useState(false);
+
+  useEffect(() => {
+		window.addEventListener('scroll', calcScroll);
+    return () => {
+      window.removeEventListener('scroll', calcScroll)
+    }
+  }, [])
+
+  const calcScroll = () => {
+		if (window.scrollY > 400) {
+      setScrollTrigger(true);
+		} else {
+      setScrollTrigger(false);
+		}
+	}
 
   const navbarTabGenerator = () => {
     return props.pages.map((tab, index) => {
       return (
         <NavbarTab
           key={index}
+          scrollTrigger={scrollTrigger}
           currentContent={props.currentContent}
           setCurrentContent={props.setCurrentContent}
           tab={tab}
@@ -26,7 +43,7 @@ const Navbar = props => {
     });
   };
   return (
-    <div className="nav-bar-wrapper">
+    <div className="nav-bar-wrapper" style={scrollTrigger ? {} : { color: 'white', background: 'transparent' }}>
       <nav className="nav-bar">
         <div className="nav-bar-logo-wrapper">
           <img className="nav-bar-logo" src={logo} alt="hello" />
@@ -45,7 +62,7 @@ const Navbar = props => {
             rel="noopener noreferrer"
             className="icon-wrapper"
           >
-            <FontAwesomeIcon icon={["fab", "facebook-f"]} className="icon" />
+            <FontAwesomeIcon icon={["fab", "facebook-f"]} className="icon" style={scrollTrigger ? {} : { color: 'white' }}/>
           </a>
           <a
             href="https://www.instagram.com/bigmountainbarbell/"
@@ -53,7 +70,7 @@ const Navbar = props => {
             rel="noopener noreferrer"
             className="icon-wrapper"
           >
-            <FontAwesomeIcon icon={["fab", "instagram"]} className="icon" />
+            <FontAwesomeIcon icon={["fab", "instagram"]} className="icon" style={scrollTrigger ? {} : { color: 'white' }}/>
           </a>
           <a
             href="https://www.youtube.com/channel/UCETBMt6vwzcI-cjxvk-rKVQ"
@@ -61,7 +78,7 @@ const Navbar = props => {
             rel="noopener noreferrer"
             className="icon-wrapper"
           >
-            <FontAwesomeIcon icon={["fab", "youtube"]} className="icon" />
+            <FontAwesomeIcon icon={["fab", "youtube"]} className="icon" style={scrollTrigger ? {} : { color: 'white' }}/>
           </a>
         </div>
       </nav>

@@ -6,6 +6,9 @@
   .hype-video-container {
     position: fixed;
     z-index: -1;
+    .hype-video {
+      height: 100vh;
+    }
   }
   .home-page-content {
     margin-top: 900px;
