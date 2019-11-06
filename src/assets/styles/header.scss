@@ -1,114 +1,135 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-.header-wrapper {
-  .heading-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    background-color: $primaryColor;
-    margin-top: 14px;
-    .heading {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-  }
-
-  .nav-bar-wrapper {
+.header-container {
+  height: 145px;
+  display: flex;
+  align-items: stretch;
+  .header-wrapper {
+    position: fixed;
+    background-color: #fff;
     width: 100%;
-    min-width: 715px;
-    display: flex;
-    justify-content: center;
+    z-index: 10;
 
-    .nav-bar {
-      height: 125px;
-      width: 85vw;
+    .heading-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      background-color: $primaryColor;
+      margin-top: 14px;
+      .heading {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+
+    .nav-bar-wrapper {
+      width: 100%;
+      min-width: 715px;
       display: flex;
       justify-content: center;
 
-      .nav-bar-logo-wrapper {
-        width: 10%;
-        min-width: 125px;
+      .nav-bar {
+        height: 125px;
+        width: 85vw;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        @include no-select();
 
-        .nav-bar-logo {
-          display: flex;
-          justify-content: center;
-          height: 60%;
-          pointer-events: none;
-        }
-
-        .nav-bar-logo-heading-wrapper {
-          width: 100%;
+        .nav-bar-logo-wrapper {
+          width: 10%;
+          min-width: 125px;
           display: flex;
           flex-direction: column;
-          align-items: center;
           justify-content: center;
+          align-items: center;
+          padding-left: 20px;
+          padding-right: 20px;
+          @include no-select();
 
-          .nav-bar-logo-heading {
-            font-size: 13px;
-            font-weight: lighter;
+          .nav-bar-logo {
+            display: flex;
+            justify-content: center;
+            height: 60%;
             pointer-events: none;
           }
-        }
-      }
 
-      .nav-bar-buttons-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 80%;
-        padding-right: 40px;
-        padding-left: 40px;
-        transition: 0.4 s ease-in-out;
+          .nav-bar-logo-heading-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-        .nav-bar-button {
-          font-size: 1.2em;
-          border: none;
-          outline: none;
-          background: none;
-          transition: 0.3s ease-in-out;
-          padding: 10px 20px;
-          height: 50px;
-          cursor: pointer;
-
-          &:hover {
-            background-color: #aaaaaa;
+            .nav-bar-logo-heading {
+              font-size: 13px;
+              font-weight: lighter;
+              pointer-events: none;
+            }
           }
         }
 
-        .active {
-          background-color: $primaryColor;
-          color: #fff;
-        }
-      }
-
-      .nav-bar-social-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 20%;
-        min-width: 75px;
-        padding-right: 20px;
-
-        .icon-wrapper {
-          width: calc(100% / 3);
+        .nav-bar-buttons-wrapper {
           display: flex;
-          justify-content: center;
+          justify-content: space-between;
+          align-items: center;
+          width: 80%;
+          padding-right: 40px;
+          padding-left: 40px;
+          transition: 0.4 s ease-in-out;
+          @include no-select();
 
-          .icon {
-            font-size: 2em;
-            transition: 0.2s ease-in-out;
-            color: #000000;
+          .nav-bar-button {
+            font-size: 1.2em;
+            border: none;
+            outline: none;
+            background: none;
+            transition: 0.3s ease-in-out;
+            padding: 10px 20px;
+            height: 50px;
+            cursor: pointer;
+
             &:hover {
-              font-size: 2.2em;
-              transform: rotate(20deg);
+              background-color: #dfdfdf;
+              border-radius: 5px;
+            }
+          }
+
+          .nav-bar-button-active {
+            font-size: 1.2em;
+            border: none;
+            outline: none;
+            background: none;
+            transition: 0.3s ease-in-out;
+            padding: 10px 20px;
+            height: 50px;
+            cursor: pointer;
+            background-color: $primaryColor;
+            color: #fff;
+          }
+        }
+
+        .nav-bar-social-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 20%;
+          min-width: 75px;
+          padding-right: 20px;
+
+          .icon-wrapper {
+            width: calc(100% / 3);
+            display: flex;
+            justify-content: center;
+
+            .icon {
+              font-size: 2em;
+              transition: 0.2s ease-in-out;
+              color: #000000;
+              &:hover {
+                font-size: 2.2em;
+                transform: rotate(20deg);
+                color: $primaryColor;
+              }
             }
           }
         }

@@ -23,48 +23,48 @@ const Navbar = props => {
 
         <div className="nav-bar-buttons-wrapper">
           <button
-            className={`nav-bar-button ${
-              props.page === "home" ? "active" : ""
+            className={`nav-bar-button${
+              props.page === "home" ? "-active" : ""
             }`}
             onClick={() => props.setPage("home")}
           >
             Home
           </button>
           <button
-            className={`nav-bar-button ${
-              props.page === "about" ? "active" : ""
+            className={`nav-bar-button${
+              props.page === "about" ? "-active" : ""
             }`}
             onClick={() => props.setPage("about")}
           >
             About
           </button>
           <button
-            className={`nav-bar-button ${
-              props.page === "memberships" ? "active" : ""
+            className={`nav-bar-button${
+              props.page === "memberships" ? "-active" : ""
             }`}
             onClick={() => props.setPage("memberships")}
           >
             Memberships
           </button>
           <button
-            className={`nav-bar-button ${
-              props.page === "facility" ? "active" : ""
+            className={`nav-bar-button${
+              props.page === "facility" ? "-active" : ""
             }`}
             onClick={() => props.setPage("facility")}
           >
             Facility
           </button>
           <button
-            className={`nav-bar-button ${
-              props.page === "services" ? "active" : ""
+            className={`nav-bar-button${
+              props.page === "services" ? "-active" : ""
             }`}
             onClick={() => props.setPage("services")}
           >
             Services
           </button>
           <button
-            className={`nav-bar-button ${
-              props.page === "coaches" ? "active" : ""
+            className={`nav-bar-button${
+              props.page === "coaches" ? "-active" : ""
             }`}
             onClick={() => props.setPage("coaches")}
           >

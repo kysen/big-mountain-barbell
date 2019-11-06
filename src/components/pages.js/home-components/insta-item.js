@@ -15,6 +15,7 @@ const InstaItem = props => {
       onClick={() => handleClick()}
     >
       <img
+        className="insta-post-image"
         resizeMode="contain"
         src={props.display_url}
         alt={props.shortcode}
