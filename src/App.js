@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import "./assets/styles/main.scss";
-import Header from "./components/header";
+
+import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Switchy from "./components/switchy";
 
@@ -16,14 +17,11 @@ const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className="header-container">
-          <Header
-            phoneNumber={phoneNumber}
-            currentContent={currentContent}
-            setCurrentContent={setCurrentContent}
-            pages={pages}
-          />
-        </div>
+        <Navbar
+          currentContent={currentContent}
+          setCurrentContent={setCurrentContent}
+          pages={pages}
+        />
         <Switchy
           currentContent={currentContent}
           setCurrentContent={setCurrentContent}
