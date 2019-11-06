@@ -1,5 +1,5 @@
 import React from "react";
-import ContactUs from "./contact";
+// import ContactUs from "./contact";
 import HypeVideo from "./home-components/hype-video";
 import InstaFeed from "./home-components/insta-feed";
 
@@ -17,7 +17,6 @@ const Home = props => {
         </div>
         <InstaFeed />
         <div className="schedule-a-tour-container">schedule a tour</div>
-        <ContactUs phoneNumber={props.phoneNumber} />
       </div>
     </div>
   );

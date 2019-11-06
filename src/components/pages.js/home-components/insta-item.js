@@ -16,13 +16,13 @@ const InstaItem = props => {
     >
       <img
         className="insta-post-image"
-        resizeMode="contain"
+        resizemode="contain"
         src={props.display_url}
         alt={props.shortcode}
         style={{ filter: mouseOn ? "brightness(50%)" : "" }}
       ></img>
       <div className="post-text" style={{ opacity: mouseOn ? "1" : "0" }}>
-        <EllipsisText text={props.text} length={"350"} />
+        <EllipsisText text={props.text} length={350} />
       </div>
     </div>
   );

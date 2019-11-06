@@ -4,12 +4,27 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import NavbarTab from "./navbar-tab";
+
+import { withRouter } from "react-router-dom";
+
 library.add(fab, faCoffee);
 
 const Navbar = props => {
   const logo = require("../assets/images/big-mountain-barbell-logo.jpg");
-  // const { navigate } = useNavigation();
 
+  const navbarTabGenerator = () => {
+    return props.pages.map((tab, index) => {
+      return (
+        <NavbarTab
+          key={index}
+          currentContent={props.currentContent}
+          setCurrentContent={props.setCurrentContent}
+          tab={tab}
+        />
+      );
+    });
+  };
   return (
     <div className="nav-bar-wrapper">
       <nav className="nav-bar">
@@ -21,56 +36,7 @@ const Navbar = props => {
           </div>
         </div>
 
-        <div className="nav-bar-buttons-wrapper">
-          <button
-            className={`nav-bar-button${
-              props.page === "home" ? "-active" : ""
-            }`}
-            onClick={() => props.setPage("home")}
-          >
-            Home
-          </button>
-          <button
-            className={`nav-bar-button${
-              props.page === "about" ? "-active" : ""
-            }`}
-            onClick={() => props.setPage("about")}
-          >
-            About
-          </button>
-          <button
-            className={`nav-bar-button${
-              props.page === "memberships" ? "-active" : ""
-            }`}
-            onClick={() => props.setPage("memberships")}
-          >
-            Memberships
-          </button>
-          <button
-            className={`nav-bar-button${
-              props.page === "facility" ? "-active" : ""
-            }`}
-            onClick={() => props.setPage("facility")}
-          >
-            Facility
-          </button>
-          <button
-            className={`nav-bar-button${
-              props.page === "services" ? "-active" : ""
-            }`}
-            onClick={() => props.setPage("services")}
-          >
-            Services
-          </button>
-          <button
-            className={`nav-bar-button${
-              props.page === "coaches" ? "-active" : ""
-            }`}
-            onClick={() => props.setPage("coaches")}
-          >
-            Coaches
-          </button>
-        </div>
+        <div className="nav-bar-buttons-wrapper">{navbarTabGenerator()}</div>
 
         <div className="nav-bar-social-wrapper">
           <a
@@ -103,4 +69,4 @@ const Navbar = props => {
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);

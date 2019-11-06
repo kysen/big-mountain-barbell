@@ -2,12 +2,14 @@ import React from "react";
 import Navbar from "./navbar";
 import "../assets/styles/header.scss";
 
-const Header = () => {
-  const [page, setPage] = React.useState("home");
-
+const Header = props => {
   return (
     <div className="header-wrapper">
-      <Navbar page={page} setPage={setPage} />
+      <Navbar
+        currentContent={props.currentContent}
+        setCurrentContent={props.setCurrentContent}
+        pages={props.pages}
+      />
     </div>
   );
 };

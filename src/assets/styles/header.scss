@@ -70,7 +70,7 @@
 
         .nav-bar-buttons-wrapper {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           align-items: center;
           width: 80%;
           padding-right: 40px;
@@ -79,14 +79,16 @@
           @include no-select();
 
           .nav-bar-button {
-            font-size: 1.2em;
-            border: none;
-            outline: none;
+            font-size: 1.3em;
             background: none;
+            text-decoration: none;
             transition: 0.3s ease-in-out;
             padding: 10px 20px;
             height: 50px;
             cursor: pointer;
+            color: black;
+            display: flex;
+            align-items: center;
 
             &:hover {
               background-color: #dfdfdf;
@@ -95,16 +97,12 @@
           }
 
           .nav-bar-button-active {
-            font-size: 1.2em;
-            border: none;
-            outline: none;
-            background: none;
-            transition: 0.3s ease-in-out;
-            padding: 10px 20px;
-            height: 50px;
-            cursor: pointer;
             background-color: $primaryColor;
             color: #fff;
+            &:hover {
+              background-color: $primaryColor;
+              border-radius: 0px;
+            }
           }
         }
 
