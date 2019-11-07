@@ -8,7 +8,7 @@ const HypeVideo = () => {
   }, []);
   return (
     <div className="hype-video-container">
-      <video ref={vidRef} src={vid} loop muted />
+      <video ref={vidRef} src={vid} loop muted className="hype-video" />
     </div>
   );
 };

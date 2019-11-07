@@ -1,8 +1,11 @@
 @import "./variables.scss";
 @import "./mixins.scss";
+
 @import "./header.scss";
+@import "./footer.scss";
 @import "./home.scss";
 @import "./contact.scss";
+@import "./about.scss";
 
 .pages-wrapper {
   display: flex;

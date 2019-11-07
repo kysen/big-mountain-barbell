@@ -1,19 +1,57 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import NavbarTab from "./navbar-tab";
+
+import { withRouter } from "react-router-dom";
+
 library.add(fab, faCoffee);
 
 const Navbar = props => {
   const logo = require("../assets/images/big-mountain-barbell-logo.jpg");
-  // const { navigate } = useNavigation();
+  const [scrollTrigger, setScrollTrigger] = useState(false);
 
+  useEffect(() => {
+    window.addEventListener("scroll", calcScroll);
+    return () => {
+      window.removeEventListener("scroll", calcScroll);
+    };
+  }, []);
+
+  const calcScroll = () => {
+    if (window.scrollY > 400) {
+      setScrollTrigger(true);
+    } else {
+      setScrollTrigger(false);
+    }
+  };
+
+  const navbarTabGenerator = () => {
+    return props.pages.map((tab, index) => {
+      return (
+        <NavbarTab
+          key={index}
+          scrollTrigger={scrollTrigger}
+          currentContent={props.currentContent}
+          setCurrentContent={props.setCurrentContent}
+          tab={tab}
+        />
+      );
+    });
+  };
   return (
-    <div className="nav-bar-wrapper">
+    <div
+      className="nav-bar-wrapper"
+      style={scrollTrigger ? {} : { color: "white", background: "transparent" }}
+    >
       <nav className="nav-bar">
-        <div className="nav-bar-logo-wrapper">
+        <div
+          className="nav-bar-logo-wrapper"
+          style={scrollTrigger ? {} : { visibility: "hidden" }}
+        >
           <img className="nav-bar-logo" src={logo} alt="hello" />
           <div className="nav-bar-logo-heading-wrapper">
             <h3 className="nav-bar-logo-heading">741 Smelter Street</h3>
@@ -21,56 +59,7 @@ const Navbar = props => {
           </div>
         </div>
 
-        <div className="nav-bar-buttons-wrapper">
-          <button
-            className={`nav-bar-button ${
-              props.page === "home" ? "active" : ""
-            }`}
-            onClick={() => props.setPage("home")}
-          >
-            Home
-          </button>
-          <button
-            className={`nav-bar-button ${
-              props.page === "about" ? "active" : ""
-            }`}
-            onClick={() => props.setPage("about")}
-          >
-            About
-          </button>
-          <button
-            className={`nav-bar-button ${
-              props.page === "memberships" ? "active" : ""
-            }`}
-            onClick={() => props.setPage("memberships")}
-          >
-            Memberships
-          </button>
-          <button
-            className={`nav-bar-button ${
-              props.page === "facility" ? "active" : ""
-            }`}
-            onClick={() => props.setPage("facility")}
-          >
-            Facility
-          </button>
-          <button
-            className={`nav-bar-button ${
-              props.page === "services" ? "active" : ""
-            }`}
-            onClick={() => props.setPage("services")}
-          >
-            Services
-          </button>
-          <button
-            className={`nav-bar-button ${
-              props.page === "coaches" ? "active" : ""
-            }`}
-            onClick={() => props.setPage("coaches")}
-          >
-            Coaches
-          </button>
-        </div>
+        <div className="nav-bar-buttons-wrapper">{navbarTabGenerator()}</div>
 
         <div className="nav-bar-social-wrapper">
           <a
@@ -79,7 +68,11 @@ const Navbar = props => {
             rel="noopener noreferrer"
             className="icon-wrapper"
           >
-            <FontAwesomeIcon icon={["fab", "facebook-f"]} className="icon" />
+            <FontAwesomeIcon
+              icon={["fab", "facebook-f"]}
+              className="icon"
+              style={scrollTrigger ? {} : { color: "white" }}
+            />
           </a>
           <a
             href="https://www.instagram.com/bigmountainbarbell/"
@@ -87,7 +80,11 @@ const Navbar = props => {
             rel="noopener noreferrer"
             className="icon-wrapper"
           >
-            <FontAwesomeIcon icon={["fab", "instagram"]} className="icon" />
+            <FontAwesomeIcon
+              icon={["fab", "instagram"]}
+              className="icon"
+              style={scrollTrigger ? {} : { color: "white" }}
+            />
           </a>
           <a
             href="https://www.youtube.com/channel/UCETBMt6vwzcI-cjxvk-rKVQ"
@@ -95,7 +92,11 @@ const Navbar = props => {
             rel="noopener noreferrer"
             className="icon-wrapper"
           >
-            <FontAwesomeIcon icon={["fab", "youtube"]} className="icon" />
+            <FontAwesomeIcon
+              icon={["fab", "youtube"]}
+              className="icon"
+              style={scrollTrigger ? {} : { color: "white" }}
+            />
           </a>
         </div>
       </nav>
@@ -103,4 +104,4 @@ const Navbar = props => {
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);

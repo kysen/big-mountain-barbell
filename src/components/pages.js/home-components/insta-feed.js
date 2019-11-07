@@ -14,7 +14,6 @@ const InstaFeed = () => {
   }, [ig]);
 
   const hiThere = postsArray => {
-    console.log(postsArray);
     return postsArray.map((current, index) => {
       // TODO sort by date
       return (

@@ -1,6 +1,7 @@
 import React from "react";
 
 const Memberships = () => {
+
   return (
     <div className="memberships-container">
       <div className="img-container">
@@ -32,6 +33,7 @@ const Memberships = () => {
       </div>
     </div>
   );
+
 };
 
 export default Memberships;
