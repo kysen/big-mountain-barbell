@@ -10,9 +10,7 @@ import Switchy from "./components/switchy";
 const App = () => {
   const [currentContent, setCurrentContent] = React.useState("Home");
 
-  const pages = ["Home", "About", "Memberships", "Services"];
-
-  const phoneNumber = "(801) 673-1383";
+  const pages = ["/", "About", "Memberships", "Services"];
 
   return (
     <div className="App">

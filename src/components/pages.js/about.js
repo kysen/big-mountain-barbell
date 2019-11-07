@@ -1,15 +1,10 @@
 import React from "react";
-import ReactPlayer from "react-player";
+import TourVid from "./about-components/tour-vid";
 
 const About = () => {
   return (
     <div className="about-container">
-      <ReactPlayer
-        url="https://www.youtube.com/watch?v=eKEgbMwg8BU"
-        playing
-        muted
-        controls={false}
-      />
+      <TourVid />
     </div>
   );
 };

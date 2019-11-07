@@ -5,12 +5,14 @@ const NavbarTab = props => {
   return (
     <NavLink
       className="nav-bar-button"
-      style={props.scrollTrigger ? {} : { color: 'white', background: 'transparent' }}
+      style={
+        props.scrollTrigger ? {} : { color: "white", background: "transparent" }
+      }
       activeClassName="nav-bar-button-active"
       exact
-      to={props.tab}
+      to={props.tab.toLowerCase()}
     >
-      {props.tab}
+      {props.tab === "/" ? "Home" : props.tab}
     </NavLink>
   );
 };

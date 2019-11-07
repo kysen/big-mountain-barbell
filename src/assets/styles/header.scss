@@ -1,6 +1,3 @@
-@import "variables.scss";
-@import "mixins.scss";
-
 .nav-bar-wrapper {
   width: 100vw;
   min-width: 715px;
@@ -8,6 +5,8 @@
   display: flex;
   justify-content: center;
   position: fixed;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
 
   .nav-bar {
     height: 125px;
