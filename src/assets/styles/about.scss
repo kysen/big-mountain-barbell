@@ -1,0 +1,13 @@
+.about-container {
+  .tour-video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    video {
+      object-fit: none;
+      object-position: 0 -30px;
+      width: 100%;
+      height: calc(100vh);
+    }
+  }
+}
