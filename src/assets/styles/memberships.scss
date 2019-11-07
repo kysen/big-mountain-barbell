@@ -1,0 +1,32 @@
+.memberships-container {
+  margin-top: 150px;
+  display: flex;
+  .img-container {
+    .memberships-img {
+      background-image: url("https://static.wixstatic.com/media/6f02ec_b10f3b7375404595843e149a976d5bad~mv2.jpg/v1/fill/w_845,h_1080,al_c,q_85/6f02ec_b10f3b7375404595843e149a976d5bad~mv2.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 70vw;
+      height: 150vh;
+      display: flex;
+      justify-content: center;
+
+      .header-wrapper {
+        align-content: center;
+      }
+
+      .memberships-img-header {
+        font-size: 7em;
+        color: #fff;
+      }
+
+      .header1 {
+        margin-top: 200px;
+      }
+    }
+
+    .memberships-info-container {
+      width: 40vw;
+    }
+  }
+}
