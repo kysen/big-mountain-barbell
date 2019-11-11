@@ -1,18 +1,20 @@
 import React from "react";
 
 const Memberships = () => {
-
   return (
     <div className="memberships-container">
       <div className="img-container">
         <div className="memberships-img">
           <div className="header-wrapper">
-            <h1 className="memberships-img-header header1">GET YOUR GYM</h1>
+            <h1 className="memberships-img-header header1">
+              GET&nbsp;YOUR&nbsp;GYM
+            </h1>
             <h1 className="memberships-img-header">MEMBERSHIP</h1>
             <h1 className="memberships-img-header">TODAY!</h1>
           </div>
         </div>
       </div>
+
       <div className="memberships-info-container">
         <p className="info">
           Are you ready to join a local gym that you can call home? Our
@@ -33,7 +35,6 @@ const Memberships = () => {
       </div>
     </div>
   );
-
 };
 
 export default Memberships;
