@@ -15,19 +15,26 @@ const Navbar = props => {
   const [scrollTrigger, setScrollTrigger] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", calcScroll);
+    const calcScroll = () => {
+      if (window.scrollY > 400) {
+        setScrollTrigger(true);
+      } else {
+        setScrollTrigger(false);
+      }
+    };
+    if (props.location.pathname === '/') {
+      window.addEventListener("scroll", calcScroll);
+    }
     return () => {
       window.removeEventListener("scroll", calcScroll);
     };
-  }, []);
+  }, [props.location.pathname]);
 
-  const calcScroll = () => {
-    if (window.scrollY > 400) {
+  useEffect(() => {
+    if (props.location.pathname !== '/') {
       setScrollTrigger(true);
-    } else {
-      setScrollTrigger(false);
-    }
-  };
+    };
+  }, [props.location.pathname]);
 
   const navbarTabGenerator = () => {
     return props.pages.map((tab, index) => {
@@ -42,6 +49,7 @@ const Navbar = props => {
       );
     });
   };
+
   return (
     <div
       className="nav-bar-wrapper"
