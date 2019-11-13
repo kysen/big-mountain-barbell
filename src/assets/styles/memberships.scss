@@ -16,12 +16,13 @@
       }
 
       .memberships-img-header {
-        width: 500px;
+        margin-left: 100px;
+        width: 900px;
         text-align: center;
         font-size: 7em;
         color: #fff;
         font-weight: bolder;
-        width: inherit;
+        background-color: rgba(0, 0, 0, 0.562);
       }
 
       .header1 {
@@ -32,7 +33,8 @@
   .memberships-info-container {
     width: 40vw;
     height: 150vh;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.562);
+    transition: 0.4s ease-in-out;
 
     .info-all {
       padding: 0px 50px;
