@@ -5,7 +5,7 @@ const InstaItem = props => {
   const [mouseOn, setMouseOn] = useState(false);
 
   const handleClick = () => {
-    window.location.href = `https://www.instagram.com/p/${props.shortcode}/`;
+    window.open(`https://www.instagram.com/p/${props.shortcode}/`, "instagram");
   };
   return (
     <div
