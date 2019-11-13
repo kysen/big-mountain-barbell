@@ -1,5 +1,5 @@
 import React from "react";
-import TourVid from "./about-components/tour-vid";
+import TourVid from "./tour-vid";
 
 const About = () => {
   return (

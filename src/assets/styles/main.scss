@@ -3,9 +3,10 @@
 
 @import "./header.scss";
 @import "./footer.scss";
-@import "./home.scss";
+@import "../../components/pages/home/home.scss";
+@import "../../components/pages/about/about.scss";
 @import "./contact.scss";
-@import "./about.scss";
+@import "./memberships.scss";
 
 .pages-wrapper {
   display: flex;

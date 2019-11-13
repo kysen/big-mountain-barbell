@@ -1,10 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Home from "./pages.js/home.js";
-import About from "./pages.js/about";
-import Memberships from "./pages.js/memberships";
-import Services from "./pages.js/services";
+import Home from "./pages/home/home";
+import About from "./pages/about/about";
+import Memberships from "./pages/memberships";
+import Services from "./pages/services";
 
 const Switchy = props => {
   // const callPage = () => {

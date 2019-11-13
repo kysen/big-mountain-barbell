@@ -1,7 +1,7 @@
 import React from "react";
 // import ContactUs from "./contact";
-import HypeVideo from "./home-components/hype-video";
-import InstaFeed from "./home-components/insta-feed";
+import HypeVideo from "./hype-video";
+import InstaFeed from "./insta-feed";
 
 const Home = props => {
   return (
