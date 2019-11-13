@@ -12,7 +12,7 @@ const NavbarTab = props => {
       exact
       to={props.tab.toLowerCase()}
     >
-      {props.tab === "/" ? "Home" : props.tab}
+      {props.tab === "/" ? "HOME" : props.tab}
     </NavLink>
   );
 };

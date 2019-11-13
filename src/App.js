@@ -10,7 +10,7 @@ import Switchy from "./components/switchy";
 const App = () => {
   const [currentContent, setCurrentContent] = React.useState("Home");
 
-  const pages = ["/", "About", "Memberships", "Services"];
+  const pages = ["/", "ABOUT", "MEMBERSHIPS", "SERVICES"];
 
   return (
     <div className="App">
