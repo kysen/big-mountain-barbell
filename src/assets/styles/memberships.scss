@@ -25,7 +25,7 @@
       }
 
       .header1 {
-        margin-top: 100px;
+        margin-top: 30vh;
       }
     }
   }
@@ -34,8 +34,38 @@
     height: 150vh;
     background-color: gray;
 
-    .info {
-      height: 20vh;
+    .info-all {
+      padding: 0px 50px;
+      color: #fff;
+      margin-top: 30px;
+    }
+
+    .sec1 {
+      margin-top: 200px;
+      height: auto;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .sec2 {
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    .sec3 {
+      padding-left: 120px;
+      list-style-type: circle;
+      font-size: 25px;
+    }
+
+    .sec4 {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 20px;
+      }
     }
   }
 }
