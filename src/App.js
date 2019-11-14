@@ -6,6 +6,13 @@ import "./assets/styles/main.scss";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Switchy from "./components/switchy";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab, fas, faCoffee, faStar);
 
 const App = () => {
   const [currentContent, setCurrentContent] = React.useState("Home");
