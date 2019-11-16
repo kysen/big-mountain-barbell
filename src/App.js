@@ -3,9 +3,9 @@ import { BrowserRouter } from "react-router-dom";
 
 import "./assets/styles/main.scss";
 
-import Navbar from "./components/navbar";
+import Navbar from "./components/nav/navbar";
 import Footer from "./components/footer";
-import Switchy from "./components/switchy";
+import Switchy from "./views/switchy";
 
 const App = () => {
   const [currentContent, setCurrentContent] = React.useState("Home");
