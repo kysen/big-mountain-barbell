@@ -11,7 +11,7 @@ import { withRouter } from "react-router-dom";
 library.add(fab, faCoffee);
 
 const Navbar = props => {
-  const logo = require("../assets/images/big-mountain-barbell-logo.jpg");
+  const logo = require("../../assets/images/big-mountain-barbell-logo.jpg");
   const [scrollTrigger, setScrollTrigger] = useState(false);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Navbar = props => {
         setScrollTrigger(false);
       }
     };
-    if (props.location.pathname === '/') {
+    if (props.location.pathname === "/") {
       window.addEventListener("scroll", calcScroll);
     }
     return () => {
@@ -31,9 +31,9 @@ const Navbar = props => {
   }, [props.location.pathname]);
 
   useEffect(() => {
-    if (props.location.pathname !== '/') {
+    if (props.location.pathname !== "/") {
       setScrollTrigger(true);
-    };
+    }
   }, [props.location.pathname]);
 
   const navbarTabGenerator = () => {
@@ -68,7 +68,6 @@ const Navbar = props => {
         </div>
 
         <div className="nav-bar-buttons-wrapper">{navbarTabGenerator()}</div>
-
         <div className="nav-bar-social-wrapper">
           <a
             href="https://www.facebook.com/bigmountainbarbell/"
