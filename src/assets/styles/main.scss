@@ -3,11 +3,11 @@
 
 @import "./app.scss";
 
-@import "./memberships.scss";
-@import "./navbar.scss";
+@import "../../components/nav/navbar.scss";
+// @import "./navbar-tab.scss";
 @import "./footer.scss";
-@import "../../components/pages/home/home.scss";
-@import "../../components/pages/about/about.scss";
+@import "../../views/pages/home-page/home.scss";
+@import "../../views/pages/about-page/about.scss";
 @import "./contact.scss";
 @import "./memberships.scss";
 

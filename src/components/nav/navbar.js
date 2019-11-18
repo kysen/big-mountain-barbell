@@ -7,7 +7,7 @@ import NavbarTab from "./navbar-tab";
 import { withRouter } from "react-router-dom";
 
 const Navbar = props => {
-  const logo = require("../assets/images/big-mountain-barbell-logo.jpg");
+  const logo = require("../../assets/images/big-mountain-barbell-logo.jpg");
   const [scrollTrigger, setScrollTrigger] = useState(false);
 
   useEffect(() => {
@@ -64,7 +64,6 @@ const Navbar = props => {
         </div>
 
         <div className="nav-bar-buttons-wrapper">{navbarTabGenerator()}</div>
-
         <div className="nav-bar-social-wrapper">
           <a
             href="https://www.facebook.com/bigmountainbarbell/"

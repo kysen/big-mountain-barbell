@@ -3,9 +3,10 @@ import { BrowserRouter } from "react-router-dom";
 
 import "./assets/styles/main.scss";
 
-import Navbar from "./components/navbar";
+import Navbar from "./components/nav/navbar";
 import Footer from "./components/footer";
-import Switchy from "./components/switchy";
+import Switchy from "./views/switchy";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
