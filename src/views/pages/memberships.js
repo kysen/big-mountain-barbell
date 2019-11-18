@@ -46,7 +46,7 @@ const Memberships = () => {
             appointments to meet you at the gym, show you around and if you'd
             like to set up your membership, we will do that too!
           </p>
-          <p>See you at BMB! ​</p>
+          <p className="bold">See you at BMB! ​</p>
         </div>
       </div>
     </div>

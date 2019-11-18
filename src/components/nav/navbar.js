@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-import { fab } from "@fortawesome/free-brands-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import NavbarTab from "./navbar-tab";
 
 import { withRouter } from "react-router-dom";
-
-library.add(fab, faCoffee);
 
 const Navbar = props => {
   const logo = require("../../assets/images/big-mountain-barbell-logo.jpg");
