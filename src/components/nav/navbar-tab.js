@@ -6,7 +6,12 @@ const NavbarTab = props => {
     <NavLink
       className="nav-bar-button"
       style={
-        props.scrollTrigger ? {} : { color: "white", background: "transparent" }
+        props.scrollTrigger
+          ? {}
+          : {
+              color: "white",
+              background: "transparent"
+            }
       }
       activeClassName="nav-bar-button-active"
       exact
