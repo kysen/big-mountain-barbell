@@ -13,7 +13,12 @@ const Home = props => {
       <div className="hype-video-wrapper">
         <HypeVideo />
         <div className="link">
-          <a href="https://youtube.com/watch?v=Svmyj56TqrQ" onClick={clicked}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://youtube.com/watch?v=Svmyj56TqrQ"
+            onClick={clicked}
+          >
             Play Full Video <FontAwesomeIcon icon={["fas", "play"]} />
           </a>
         </div>
