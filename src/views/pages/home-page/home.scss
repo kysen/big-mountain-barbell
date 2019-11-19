@@ -3,11 +3,36 @@
   flex-direction: column;
   align-items: center;
 
-  .hype-video-container {
-    position: fixed;
-    z-index: -1;
-    .hype-video {
+  .hype-video-wrapper {
+    display: flex;
+
+    width: 100vw;
+    height: 80%;
+
+    .link {
+      cursor: pointer;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 100%;
       height: 100vh;
+      padding-right: 30px;
+      z-index: 4;
+      position: absolute;
+      a {
+        color: white;
+        text-decoration: none;
+
+        cursor: pointer;
+      }
+    }
+    .hype-video-container {
+      position: fixed;
+      z-index: -1;
+
+      .hype-video {
+        height: 100%;
+      }
     }
   }
   .home-page-content {

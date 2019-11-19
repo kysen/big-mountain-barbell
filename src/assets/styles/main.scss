@@ -17,6 +17,9 @@
   flex-direction: column;
   align-items: center;
 }
+.App {
+  overflow-x: hidden;
+}
 
 * {
   margin: 0;
