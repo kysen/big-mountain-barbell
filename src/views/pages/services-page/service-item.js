@@ -1,7 +1,5 @@
 import React from "react";
 
-import one from "../../../assets/images/slides/1.jpg";
-
 const ServiceItem = props => {
   // var d = document.getElementById("learn-more");
   // d.style.position = "absolute";
