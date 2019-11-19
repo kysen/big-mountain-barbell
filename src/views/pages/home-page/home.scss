@@ -1,0 +1,155 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .hype-video-wrapper {
+    display: flex;
+
+    width: 100vw;
+    height: 80%;
+
+    .link {
+      cursor: pointer;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+      padding-right: 30px;
+      z-index: 4;
+      position: absolute;
+      a {
+        color: white;
+        text-decoration: none;
+
+        cursor: pointer;
+      }
+    }
+    .hype-video-container {
+      position: fixed;
+      z-index: -1;
+
+      .hype-video {
+        height: 100%;
+      }
+    }
+  }
+  .home-page-content {
+    margin-top: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .reviews-container {
+      @include no-select();
+      width: 70vw;
+      padding: 110px 0 80px 0;
+
+      .reviews-header {
+        font-size: 0.9em;
+      }
+      .stars-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .stars {
+          width: 70vw;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          transition: 0.2s ease-in-out;
+
+          .star {
+            color: rgb(255, 153, 0);
+            font-size: 6em;
+          }
+        }
+
+        .num-container {
+          display: flex;
+          justify-content: center;
+
+          .num {
+            font-size: 4em;
+          }
+        }
+      }
+
+      .total {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .home-page-quote {
+      padding: 30px;
+      background-color: white;
+      width: 40%;
+      font-size: 1.8em;
+      font-style: italic;
+      line-height: 1.5em;
+    }
+
+    .schedule-a-tour-container {
+      border-color: blue;
+    }
+
+    .insta-feed-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70vw;
+
+      .insta-posts-wrapper {
+        width: 70vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 80px;
+        align-items: center;
+        grid-gap: 20px;
+        .post-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 20vw;
+          height: 20vw;
+          margin: 20px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .insta-post-image {
+            width: 20vw;
+            height: 20vw;
+            object-fit: cover;
+            transition: 0.3s ease-in-out;
+          }
+          .post-text {
+            transition: 0.4s ease-in-out;
+
+            position: absolute;
+            z-index: 1;
+            width: 15vw;
+            height: 15vw;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            span {
+              width: 100%;
+              overflow-wrap: break-word;
+              word-wrap: break-word;
+            }
+          }
+        }
+      }
+    }
+  }
+}
