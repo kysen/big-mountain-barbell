@@ -5,9 +5,19 @@ import InstaFeed from "./insta-feed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Home = props => {
+  const clicked = () => {
+    console.log("clicked");
+  };
   return (
     <div className="home-container">
-      <HypeVideo />
+      <div className="hype-video-wrapper">
+        <HypeVideo />
+        <div className="link">
+          <a href="https://youtube.com/watch?v=Svmyj56TqrQ" onClick={clicked}>
+            Play Full Video <FontAwesomeIcon icon={["fas", "play"]} />
+          </a>
+        </div>
+      </div>
       <div className="home-page-content">
         <div className="reviews-container">
           <div className="reviews-header">
