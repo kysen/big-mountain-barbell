@@ -4,9 +4,21 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./pages/home-page/home";
 import About from "./pages/about-page/about";
 import Memberships from "./pages/memberships";
-import Services from "./pages/services-page/services";
+import Services from "./pages/services";
 
-const Switchy = () => {
+const Switchy = props => {
+  // const callPage = () => {
+  //   if (props.currentContent === "About") {
+  //     return <About />;
+  //   } else if (props.currentContent === "Memberships") {
+  //     return <Memberships />;
+  //   } else if (props.currentContent === "Services") {
+  //     return <Services />;
+  //   } else {
+  //     return <Home />;
+  //   }
+  // };
+
   return (
     <div className="pages-wrapper">
       <Switch>

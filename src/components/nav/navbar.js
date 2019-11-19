@@ -49,11 +49,7 @@ const Navbar = props => {
   return (
     <div
       className="nav-bar-wrapper"
-      style={
-        scrollTrigger
-          ? { position: "fixed" }
-          : { color: "white", background: "transparent" }
-      }
+      style={scrollTrigger ? {} : { color: "white", background: "transparent" }}
     >
       <nav className="nav-bar">
         <div
