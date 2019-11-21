@@ -8,6 +8,7 @@
 
     img {
       width: 50vw;
+      @include no-select();
     }
 
     .service-item-content {

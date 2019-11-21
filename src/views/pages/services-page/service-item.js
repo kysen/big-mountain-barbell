@@ -9,8 +9,9 @@ const ServiceItem = props => {
     <div className="service-item-wrapper">
       <img src={props.image} alt="one" />
       <div className="service-item-content">
-        <div className="header">Chiromovement Muscle + Joint Clinic</div>
-        <div className="content">content</div>
+        <div className="header">{props.title}</div>
+        <div className="content">{props.content}</div>
+        <div>{props.pricing}</div>
         <div className="learn-more">Learn More</div>
       </div>
     </div>
