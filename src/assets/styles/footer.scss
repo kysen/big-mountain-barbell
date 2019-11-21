@@ -1,11 +1,10 @@
 .footer-container {
   color: white;
-  background: rgb(2, 0, 37);
+  background: rgb(0, 0, 0);
   background: linear-gradient(
-    330deg,
-    rgba(2, 0, 37, 1) 0%,
-    rgba(52, 88, 134, 1) 76%,
-    rgba(52, 88, 134, 1) 100%
+    342deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(61, 155, 224, 1) 80%
   );
   height: 300px;
   display: flex;
@@ -20,6 +19,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        color: black;
+      }
+    }
 
     h4 {
       margin: 15px 0px;
@@ -32,6 +38,40 @@
       align-items: center;
       justify-content: space-around;
       border-radius: 5px;
+      font-family: "Raleway", sans-serif;
+
+      ::-webkit-input-placeholder {
+        color: rgb(146, 146, 146);
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      ::-moz-placeholder {
+        color: rgb(146, 146, 146);
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      :-ms-input-placeholder {
+        color: rgb(146, 146, 146);
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      ::placeholder {
+        color: rgb(146, 146, 146);
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .input-style {
+        outline: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
 
       input {
         height: 40px;
@@ -46,6 +86,9 @@
         border: none;
         border-radius: 3px;
         padding: 5px 15px;
+        resize: none;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
       }
 
       .footer-message {
@@ -58,13 +101,14 @@
         // border: none;
         border-radius: 3px;
         padding: 5px 15px;
+        font-family: Arial, Helvetica, sans-serif;
       }
     }
   }
 
   .footer-copyright {
     padding: 10px;
-    
+
     p {
       font-size: 10px;
     }

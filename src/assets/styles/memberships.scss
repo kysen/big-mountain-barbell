@@ -26,6 +26,7 @@
         font-size: 7em;
         color: #fff;
         font-weight: bolder;
+        @include no-select();
       }
 
       .header1 {
@@ -39,6 +40,7 @@
     background-color: rgba(0, 0, 0, 0.61);
     backdrop-filter: blur(70px);
     transition: 0.4s ease-in-out;
+    @include no-select();
 
     .info-all {
       padding: 0px 50px;
