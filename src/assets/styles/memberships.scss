@@ -3,7 +3,8 @@
   background-image: url("https://static.wixstatic.com/media/6f02ec_b10f3b7375404595843e149a976d5bad~mv2.jpg/v1/fill/w_845,h_1080,al_c,q_85/6f02ec_b10f3b7375404595843e149a976d5bad~mv2.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 150vh;
+  background-position: -10% 40%;
+  height: 100vh;
   .img-container {
     display: flex;
     justify-content: center;
@@ -34,7 +35,7 @@
   }
   .memberships-info-container {
     width: 40vw;
-    height: 150vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.61);
     backdrop-filter: blur(70px);
     transition: 0.4s ease-in-out;
