@@ -73,37 +73,31 @@ const Navbar = props => {
             href="https://www.facebook.com/bigmountainbarbell/"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon-wrapper"
+            className={
+              scrollTrigger ? "icon-wrapper" : "icon-wrapper-invisible"
+            }
           >
-            <FontAwesomeIcon
-              icon={["fab", "facebook-f"]}
-              className="icon"
-              style={scrollTrigger ? {} : { color: "white" }}
-            />
+            <FontAwesomeIcon icon={["fab", "facebook-f"]} className="icon" />
           </a>
           <a
             href="https://www.instagram.com/bigmountainbarbell/"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon-wrapper"
+            className={
+              scrollTrigger ? "icon-wrapper" : "icon-wrapper-invisible"
+            }
           >
-            <FontAwesomeIcon
-              icon={["fab", "instagram"]}
-              className="icon"
-              style={scrollTrigger ? {} : { color: "white" }}
-            />
+            <FontAwesomeIcon icon={["fab", "instagram"]} className="icon" />
           </a>
           <a
             href="https://www.youtube.com/channel/UCETBMt6vwzcI-cjxvk-rKVQ"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon-wrapper"
+            className={
+              scrollTrigger ? "icon-wrapper" : "icon-wrapper-invisible"
+            }
           >
-            <FontAwesomeIcon
-              icon={["fab", "youtube"]}
-              className="icon"
-              style={scrollTrigger ? {} : { color: "white" }}
-            />
+            <FontAwesomeIcon icon={["fab", "youtube"]} className="icon" />
           </a>
         </div>
       </nav>

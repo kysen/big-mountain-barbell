@@ -1,12 +1,15 @@
 @import "./variables.scss";
 @import "./mixins.scss";
+@import "node_modules/react-modal-video/scss/modal-video.scss";
 
 @import "./app.scss";
 
 @import "../../components/nav/navbar.scss";
-// @import "./navbar-tab.scss";
 @import "./footer.scss";
+
 @import "../../views/pages/home-page/home.scss";
+@import "../../views/pages/home-page/hype-video.scss";
+
 @import "../../views/pages/about-page/about.scss";
 @import "../../views/pages/services-page/services.scss";
 @import "./contact.scss";

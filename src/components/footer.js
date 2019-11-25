@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <div id="footer-container">
       <div className="footer-wrapper">
         <div>
           <h2>GET IN TOUCH</h2>
@@ -20,7 +20,10 @@ const Footer = () => {
       </div>
       <div className="footer-copyright">
         <p>© 2019 BIG MOUNTAIN BARBELL, LLC. All Rights Reserved.</p>
-        <p>No imagery or logos contained within this site may be used without the permission of Big Mountain Barbell, LLC.</p>
+        <p>
+          No imagery or logos contained within this site may be used without the
+          permission of Big Mountain Barbell, LLC.
+        </p>
       </div>
     </div>
   );

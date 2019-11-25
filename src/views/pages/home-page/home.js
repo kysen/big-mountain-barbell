@@ -1,28 +1,14 @@
 import React from "react";
-// import ContactUs from "./contact";
+
 import HypeVideo from "./hype-video";
 import InstaFeed from "./insta-feed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Home = props => {
-  const clicked = () => {
-    console.log("clicked");
-  };
+const Home = () => {
   return (
     <div className="home-container">
-      <div className="hype-video-wrapper">
-        <HypeVideo />
-        <div className="link">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://youtube.com/watch?v=Svmyj56TqrQ"
-            onClick={clicked}
-          >
-            Play Full Video <FontAwesomeIcon icon={["fas", "play"]} />
-          </a>
-        </div>
-      </div>
+      <HypeVideo />
+
       <div className="home-page-content">
         <div className="reviews-container">
           <div className="reviews-header">
