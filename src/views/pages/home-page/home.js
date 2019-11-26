@@ -38,7 +38,6 @@ const Home = () => {
           client results."
         </div>
         <InstaFeed />
-        <div className="schedule-a-tour-container">schedule a tour</div>
       </div>
     </div>
   );
