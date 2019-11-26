@@ -1,4 +1,5 @@
 import React from "react";
+import Form from './form/Form';
 
 const Footer = () => {
   return (
@@ -10,13 +11,7 @@ const Footer = () => {
           <h4>(801) 673-1383</h4>
           <h4>BigMountainBarbell@gmail.com</h4>
         </div>
-        <div className="footer-form">
-          <input placeholder="Name" />
-          <input placeholder="Email" />
-          <input placeholder="Phone" />
-          <textarea placeholder="Message" rows="5" />
-          <button className="footer-button">send</button>
-        </div>
+        <Form />
       </div>
       <div className="footer-copyright">
         <p>© 2019 BIG MOUNTAIN BARBELL, LLC. All Rights Reserved.</p>
