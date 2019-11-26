@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import CssBaseline from "@material-ui/core/CssBaseline";
-
 import "./assets/styles/main.scss";
 
 import Navbar from "./components/nav/navbar";
@@ -24,7 +22,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <CssBaseline />
       <BrowserRouter>
         <Navbar
           currentContent={currentContent}
