@@ -64,5 +64,60 @@
     .schedule-a-tour-container {
       border-color: blue;
     }
+
+    .insta-feed-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70vw;
+
+      .insta-posts-wrapper {
+        width: 70vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 80px;
+        align-items: center;
+        grid-gap: 20px;
+        .post-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 20vw;
+          height: 20vw;
+          margin: 20px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .insta-post-image {
+            width: 20vw;
+            height: 20vw;
+            object-fit: cover;
+            transition: 0.3s ease-in-out;
+          }
+          .post-text {
+            transition: 0.4s ease-in-out;
+
+            position: absolute;
+            z-index: 1;
+            width: 15vw;
+            height: 15vw;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            span {
+              width: 100%;
+              overflow-wrap: break-word;
+              word-wrap: break-word;
+            }
+          }
+        }
+      }
+    }
   }
 }

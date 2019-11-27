@@ -1,23 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
 
 import InstaItem from "./insta-item";
 
-const useStyles = makeStyles({
-  root: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    width: "70vw"
-  },
-  postsContainer: {
-    margin: "80px 0px"
-  }
-});
-
 const InstaFeed = () => {
-  const classes = useStyles();
   const [postsArray, setPostsArray] = useState([]);
 
   var ig = require("instagram-scraping");
@@ -43,10 +28,8 @@ const InstaFeed = () => {
   };
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={4} className={classes.postsContainer}>
-        {hiThere(postsArray)}
-      </Grid>
+    <div className="insta-feed-container">
+      <div className="insta-posts-wrapper">{hiThere(postsArray)}</div>
     </div>
   );
 };
