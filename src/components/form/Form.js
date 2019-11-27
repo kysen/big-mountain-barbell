@@ -7,7 +7,15 @@ const Form = () => {
       <input placeholder="Email" />
       <input placeholder="Phone" />
       <textarea placeholder="Message" rows="5" />
-      <button className="footer-button">Send</button>
+      <div class="button" id="button-7">
+        <div id="dub-arrow">
+          <img
+            src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true"
+            alt=""
+          />
+        </div>
+        <p>SEND</p>
+      </div>
     </div>
   );
 };

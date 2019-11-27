@@ -77,31 +77,86 @@
         height: 40px;
         width: 250px;
         border: none;
-        border-radius: 3px;
+        border-radius: 0px;
         padding: 0 15px;
       }
 
       textarea {
         width: 250px;
         border: none;
-        border-radius: 3px;
-        padding: 5px 15px;
+        border-radius: 0px;
+        padding: 0px 15px;
         resize: none;
         font-family: "Raleway", sans-serif;
         font-weight: bold;
       }
 
       .footer-message {
-        height: 120px;
+        height: 100px;
       }
 
-      .footer-button {
-        // height: 20px;
+      .button {
+        display: inline-flex;
+        height: 30px;
         width: 150px;
-        // border: none;
-        border-radius: 3px;
-        padding: 5px 15px;
-        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid #bfc0c0;
+        margin: 2px 0px 0px 0px;
+        color: #bfc0c0;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.8em;
+        letter-spacing: 1.5px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      a {
+        color: #bfc0c0;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+
+      #button-7 {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+
+      #button-7 p {
+        position: relative;
+        left: 0;
+        transition: all 0.35s ease-Out;
+      }
+
+      #dub-arrow {
+        width: 100%;
+        height: 100%;
+        background: #bfc0c0;
+        left: -200px;
+        position: absolute;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.35s ease-Out;
+        bottom: 0;
+      }
+
+      #button-7 img {
+        width: 20px;
+        height: auto;
+      }
+
+      #button-7:hover #dub-arrow {
+        left: 0;
+      }
+
+      #button-7:hover p {
+        left: 150px;
       }
     }
   }
