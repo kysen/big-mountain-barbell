@@ -4,16 +4,14 @@ import { NavLink } from "react-router-dom";
 const NavbarTab = props => {
   return (
     <NavLink
-      className="nav-bar-button"
-      style={
-        props.scrollTrigger
-          ? {}
-          : {
-              color: "white",
-              background: "transparent"
-            }
+      className={
+        props.scrollTrigger ? "nav-bar-button" : "nav-bar-button-invisible"
       }
-      activeClassName="nav-bar-button-active"
+      activeClassName={
+        props.scrollTrigger
+          ? "nav-bar-button-active"
+          : "nav-bar-button-invisible-active"
+      }
       exact
       to={props.tab.toLowerCase()}
     >

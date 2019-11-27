@@ -75,13 +75,35 @@
         }
       }
 
+      .nav-bar-button-invisible {
+        font-size: 1.3em;
+        background-color: transparent;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        padding: 10px 20px;
+        height: 50px;
+        cursor: pointer;
+        color: white;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: $primaryColor;
+          border-radius: 5px;
+        }
+      }
+
       .nav-bar-button-active {
         background-color: $primaryColor;
         color: #fff;
+        border-radius: 5px;
+
         &:hover {
           background-color: $primaryColor;
-          border-radius: 0px;
         }
+      }
+      .nav-bar-button-invisible-active {
+        color: $primaryColor;
       }
     }
 
@@ -95,18 +117,36 @@
 
       .icon-wrapper {
         width: calc(100% / 3);
+        height: 100%;
         display: flex;
         justify-content: center;
-
+        align-items: center;
+        color: black;
+        &:hover {
+          font-size: 1.3em;
+          // transform: rotate(20deg);
+          color: $primaryColor;
+        }
         .icon {
           font-size: 2em;
           transition: 0.2s ease-in-out;
-          color: #000000;
-          &:hover {
-            font-size: 2.2em;
-            transform: rotate(20deg);
-            color: $primaryColor;
-          }
+        }
+      }
+      .icon-wrapper-invisible {
+        width: calc(100% / 3);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        &:hover {
+          font-size: 1.3em;
+          // transform: rotate(20deg);
+          color: $primaryColor;
+        }
+        .icon {
+          font-size: 2em;
+          transition: 0.2s ease-in-out;
         }
       }
     }
