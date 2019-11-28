@@ -5,15 +5,15 @@
 @import "./app.scss";
 
 @import "../../components/nav/navbar.scss";
-@import "./footer.scss";
+@import "../../components/footer/footer.scss";
 
 @import "../../views/pages/home-page/home.scss";
 @import "../../views/pages/home-page/hype-video.scss";
 
 @import "../../views/pages/about-page/about.scss";
 @import "../../views/pages/services-page/services.scss";
+@import "../../views/pages/memberships-page/memberships.scss";
 @import "./contact.scss";
-@import "./memberships.scss";
 
 .pages-wrapper {
   display: flex;
