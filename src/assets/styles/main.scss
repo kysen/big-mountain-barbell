@@ -7,12 +7,12 @@
 @import "../../components/nav/navbar.scss";
 @import "../../components/footer/footer.scss";
 
-@import "../../views/pages/home-page/home.scss";
-@import "../../views/pages/home-page/hype-video.scss";
+@import "../../views/pages/Home/home.scss";
+@import "../../views/pages/Home/hype-video.scss";
 
-@import "../../views/pages/about-page/about.scss";
-@import "../../views/pages/services-page/services.scss";
-@import "../../views/pages/memberships-page/memberships.scss";
+@import "../../views/pages/About/about.scss";
+@import "../../views/pages/Services/services.scss";
+@import "../../views/pages/Memberships/memberships.scss";
 @import "./contact.scss";
 
 .pages-wrapper {
