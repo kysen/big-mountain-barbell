@@ -1,11 +1,10 @@
 #footer-container {
   color: white;
-  background: rgb(2, 0, 37);
+  background: rgb(0, 0, 0);
   background: linear-gradient(
-    330deg,
-    rgba(2, 0, 37, 1) 0%,
-    rgba(52, 88, 134, 1) 76%,
-    rgba(52, 88, 134, 1) 100%
+    342deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(61, 155, 224, 1) 80%
   );
   height: 300px;
   display: flex;
@@ -20,6 +19,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        color: black;
+      }
+    }
 
     h4 {
       margin: 15px 0px;
@@ -32,32 +38,125 @@
       align-items: center;
       justify-content: space-around;
       border-radius: 5px;
+      font-family: "Raleway", sans-serif;
+
+      ::-webkit-input-placeholder {
+        color: rgb(146, 146, 146);
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      ::-moz-placeholder {
+        color: rgb(146, 146, 146);
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      :-ms-input-placeholder {
+        color: rgb(146, 146, 146);
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      ::placeholder {
+        color: rgb(146, 146, 146);
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .input-style {
+        outline: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
 
       input {
         height: 40px;
         width: 250px;
         border: none;
-        border-radius: 3px;
+        border-radius: 0px;
         padding: 0 15px;
       }
 
       textarea {
         width: 250px;
         border: none;
-        border-radius: 3px;
-        padding: 5px 15px;
+        border-radius: 0px;
+        padding: 0px 15px;
+        resize: none;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
       }
 
       .footer-message {
-        height: 120px;
+        height: 100px;
       }
 
-      .footer-button {
-        // height: 20px;
+      .button {
+        display: inline-flex;
+        height: 30px;
         width: 150px;
-        // border: none;
-        border-radius: 3px;
-        padding: 5px 15px;
+        border: 2px solid #fff;
+        margin: 2px 0px 0px 0px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.8em;
+        letter-spacing: 1.5px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+
+      #button-7 {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+
+      #button-7 p {
+        position: relative;
+        left: 0;
+        transition: all 0.35s ease-Out;
+      }
+
+      #dub-arrow {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        left: -200px;
+        position: absolute;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.35s ease-Out;
+        bottom: 0;
+      }
+
+      #button-7 img {
+        width: 20px;
+        height: auto;
+      }
+
+      #button-7:hover #dub-arrow {
+        left: 0;
+      }
+
+      #button-7:hover p {
+        left: 150px;
       }
     }
   }
