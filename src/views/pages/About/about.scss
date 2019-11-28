@@ -3,16 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .tour-video-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     video {
-      object-fit: none;
-      width: 100%;
-      height: calc(85vh);
-      margin-top: 125px;
+      object-fit: cover;
+      width: 100vw;
+      height: calc(100vh - 112px);
+      margin-top: 112px;
     }
   }
 
