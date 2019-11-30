@@ -3,7 +3,7 @@ import vid from "../../../assets/videos/hype-vid-silent-3rd.mp4";
 import ModalVideo from "react-modal-video";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const HypeVideo = () => {
+const HypeVideo = ({ setOpen }) => {
   const [youtubeOpen, setYoutubeOpen] = React.useState(false);
 
   const vidRef = useRef();
@@ -22,7 +22,7 @@ const HypeVideo = () => {
         </div>
       </div>
       <div className="schedule-tour-wrapper">
-        <a href="#footer-container" className="schedule-tour-button">
+        <a className="schedule-tour-button" onClick={setOpen}>
           Schedule a Tour
         </a>
         <div></div>

@@ -1,12 +1,16 @@
 import React from "react";
 
 const Form = () => {
+  const handleClick = e => {
+    // e.stopPropagation();
+  }
+
   return (
     <div className="footer-form">
-      <input placeholder="Name" />
-      <input placeholder="Email" />
-      <input placeholder="Phone" />
-      <textarea placeholder="Message" rows="5" />
+      <input onClick={handleClick} placeholder="Name" />
+      <input onClick={handleClick} placeholder="Email" />
+      <input onClick={handleClick} placeholder="Phone" />
+      <textarea onClick={handleClick} placeholder="Message" rows="5" />
       <div class="button" id="button-7">
         <div id="dub-arrow">
           <img
