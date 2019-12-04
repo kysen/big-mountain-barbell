@@ -10,7 +10,7 @@ const ServiceItem = props => {
       <img src={props.image} alt="one" />
       <div className="service-item-content">
         <div className="header">{props.title}</div>
-        <div className="content">{props.content}</div>
+        {props.content}
         <div>{props.pricing}</div>
         <div className="learn-more">Learn More</div>
       </div>

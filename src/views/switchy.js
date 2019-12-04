@@ -1,10 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Home from "./pages/home-page/home";
-import About from "./pages/about-page/about";
-import Memberships from "./pages/memberships";
-import Services from "./pages/services-page/services";
+import Home from "./pages/Home/home";
+import About from "./pages/About/about";
+import Memberships from "./pages/Memberships/memberships";
+import Services from "./pages/Services/services";
 
 const Switchy = () => {
   return (

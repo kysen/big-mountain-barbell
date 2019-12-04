@@ -27,13 +27,24 @@
       }
 
       .content {
-        font-size: 25px;
+        font-size: 18px;
+        width: 70%;
+
+        p {
+          margin-top: 20px;
+          width: 100%;
+        }
       }
       .learn-more {
         font-size: 30px;
         border: 2px solid black;
         padding: 8px;
-        box-shadow: 0px 5px;
+        box-shadow: 4px 4px 6px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.137);
+        }
       }
     }
   }
