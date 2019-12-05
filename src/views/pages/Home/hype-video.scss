@@ -23,14 +23,16 @@
     }
   }
 
-  .link {
+  .play-full-video-wrapper {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     width: 100vw;
     height: 100vh;
 
-    div {
+    .play-wrapper {
+      display: flex;
+      align-items: center;
       z-index: 4;
       transition: 0.2s ease-in-out;
       padding: 0px 60px 30px 0px;

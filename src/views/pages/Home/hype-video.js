@@ -16,9 +16,11 @@ const HypeVideo = ({ setOpen }) => {
       <div className="hype-video-container">
         <video ref={vidRef} src={vid} loop muted className="hype-video" />
       </div>
-      <div className="link">
-        <div onClick={() => setYoutubeOpen(true)}>
-          Play Full Video <FontAwesomeIcon icon={["fas", "play"]} />
+      <div className="play-full-video-wrapper">
+        <div className="play-wrapper" onClick={() => setYoutubeOpen(true)}>
+          <div> Play Full Video </div>
+          &nbsp;
+          <FontAwesomeIcon icon={["fas", "play"]} />
         </div>
       </div>
       <div className="schedule-tour-wrapper">
