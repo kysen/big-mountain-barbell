@@ -22,9 +22,9 @@ const HypeVideo = ({ setOpen }) => {
         </div>
       </div>
       <div className="schedule-tour-wrapper">
-        <a className="schedule-tour-button" onClick={setOpen}>
+        <div className="schedule-tour-button" onClick={setOpen}>
           Schedule a Tour
-        </a>
+        </div>
         <div></div>
       </div>
       <ModalVideo

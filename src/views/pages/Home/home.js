@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Modal from '../../../components/Modal/Modal';
+import Modal from "../../../components/Modal/Modal";
 import HypeVideo from "./hype-video";
 import InstaFeed from "./insta-feed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -39,10 +39,7 @@ const Home = () => {
           client results."
         </div>
         <InstaFeed />
-        <div className="schedule-a-tour-container" onClick={() => {
-          setOpen(true);
-          console.log('clicked');
-        }}>schedule a tour</div>
+
         <Modal open={open} close={() => setOpen(false)} header="Contact" />
       </div>
     </div>
