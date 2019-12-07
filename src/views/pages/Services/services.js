@@ -2,15 +2,51 @@ import React from "react";
 
 import ServiceItem from "./service-item.js";
 
-import one from "../../../assets/images/slides/1.jpg";
-import two from "../../../assets/images/slides/2.jpg";
+import Modal from "../../../components/Modal/Modal";
+
+import chiro from "../../../assets/images/services/chiro.jpg";
+import nutritionalCoaching from "../../../assets/images/services/nutrition.jpg";
+import fitbliss from "../../../assets/images/services/fitbliss.jpg";
+import personalized from "../../../assets/images/slides/4.jpg";
+import oneOnOne from "../../../assets/images/slides/2.jpg";
+import dripSweat from "../../../assets/images/services/drip-sweat.jpg";
 
 const Services = () => {
+  const [open, setOpen] = React.useState(false);
+
   return (
     <div className="services-container">
       <ServiceItem
-        image={one}
+        image={oneOnOne}
+        title="One-On-One Personal Training"
+        learnMore={"Contact Us"}
+        setOpen={setOpen}
+        content={
+          <div className="content">
+            <p>
+              This is an in gym experience with a trainer who is with you from
+              your first day until you've reached your goal. After goals are
+              established your trainer will then create a custom program for you
+              and guidance is given throughout for additional guided workouts on
+              your own.
+            </p>
+            <p>
+              <div className="bold">
+                Additional one on one training options available:
+              </div>
+              Partner or Couples training
+              <br />
+              Small group training
+            </p>
+          </div>
+        }
+        pricing="$40-$85/hr"
+      />
+      <ServiceItem
+        image={chiro}
         title="Chiromovement Muscle + Joint Clinic"
+        learnMore={"Learn More"}
+        url={"https://www.chiromovement.com/"}
         content={
           <div className="content">
             <p>
@@ -21,7 +57,7 @@ const Services = () => {
               and recover faster. ChiroMovement is the go-to sports chiropractor
               at all Utah Powerlifting Association competitions.
             </p>
-            <p>
+            {/* <p>
               Dr. Bird is a local from Utah, graduating from both Salt Lake
               Community College and the University of Utah before attending the
               Cleveland University in Kansas City. As a Doctor of Chiropractic,
@@ -29,7 +65,7 @@ const Services = () => {
               appointment has a personalized mix of chiropractic adjustments and
               soft tissue work. Dry needling and taping are also used when
               needed.{" "}
-            </p>
+            </p> */}
             <p>
               Making an appointment is easy – visit{" "}
               <a href="https://chiromovement.janeapp.com/#/staff_member/1/treatment/1">
@@ -42,8 +78,10 @@ const Services = () => {
         }
       />
       <ServiceItem
-        image={two}
+        image={nutritionalCoaching}
         title="Custom Nutrition Coaching"
+        learnMore={"Contact Us"}
+        setOpen={setOpen}
         content={
           <div className="content">
             <p>
@@ -56,74 +94,62 @@ const Services = () => {
           </div>
         }
         pricing="$99-149/monthly"
-        url={false}
       />
       <ServiceItem
-        image={two}
+        image={fitbliss}
         title="Fitbliss Fitness"
+        url={"https://fitblissfitness.com/ladieslift"}
+        learnMore={"Learn More"}
         content={
           <div className="content">
-            <p>
-              Interested in learning about macro based flexible dieting? We can
-              help teach you all the ins and outs of macronutrients and how to
-              implement this in to your life. We will work with you to customize
-              a plan specifically for you and modify as needed to help you reach
-              your goal.
+            <p className="p-bigger">
+              Do you feel like it’s time to make a positive change in your life?
+              Ready to be a part of an empowering group of badass women?
             </p>
           </div>
         }
-        url={false}
       />
       <ServiceItem
-        image={two}
-        title="One-On-One Personal Training"
-        content={
-          <div className="content">
-            <p>
-              Interested in learning about macro based flexible dieting? We can
-              help teach you all the ins and outs of macronutrients and how to
-              implement this in to your life. We will work with you to customize
-              a plan specifically for you and modify as needed to help you reach
-              your goal.
-            </p>
-          </div>
-        }
-        pricing="$40-$85/hr"
-        url={false}
-      />
-      <ServiceItem
-        image={two}
+        image={personalized}
         title="Personalized Workout Programming"
+        learnMore={"Contact Us"}
+        setOpen={setOpen}
         content={
           <div className="content">
             <p>
-              Interested in learning about macro based flexible dieting? We can
-              help teach you all the ins and outs of macronutrients and how to
-              implement this in to your life. We will work with you to customize
-              a plan specifically for you and modify as needed to help you reach
-              your goal.
+              Feeling lost in the gym? Just need to change up your workout
+              routine? This option is for those who want to start a new workout
+              routine, are looking to freshen up their current workout schedule,
+              or need help achieving specific strength or physique goals. This
+              option includes monthly workouts specifically created for your
+              lifestyle and goals.
             </p>
           </div>
         }
         pricing="$49+/monthly"
-        url={false}
       />
       <ServiceItem
-        image={two}
+        image={dripSweat}
         title="Drip Sweat"
+        learnMore="Learn More"
+        url={"https://www.vagaro.com/dripsweatboxingfitness"}
         content={
           <div className="content">
             <p>
-              Interested in learning about macro based flexible dieting? We can
-              help teach you all the ins and outs of macronutrients and how to
-              implement this in to your life. We will work with you to customize
-              a plan specifically for you and modify as needed to help you reach
-              your goal.
+              Drip Sweat Boxing and Fitness combines boxing fitness with
+              strength and conditioning in a team environment. You’ll learn real
+              boxing technique, power through circuits and get a full body
+              workout in a unique way. Team boxing sessions are hour long
+              sessions where groups are capped at 10 to provide individualize
+              attention as well. Our trainers also offer one on one training
+              sessions where you’ll be able to conquer the sweet science of
+              boxing at a quicker pace. Come by and switch up your workout with
+              us!
             </p>
           </div>
         }
-        url={false}
       />
+      <Modal open={open} close={() => setOpen(false)} header="Contact" />
     </div>
   );
 };
