@@ -1,0 +1,122 @@
+@media only screen and (max-width: 768px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .home-page-content {
+      // margin-top: 100vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .reviews-container {
+        @include no-select();
+        width: 70vw;
+        padding: 110px 0 80px 0;
+
+        .reviews-header {
+          font-size: 0.7em;
+        }
+        .stars-container {
+          margin-top: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .stars {
+            width: 70vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            transition: 0.2s ease-in-out;
+
+            .star {
+              color: rgb(255, 153, 0);
+              font-size: 2em;
+            }
+          }
+
+          .num-container {
+            display: flex;
+            justify-content: center;
+
+            .num {
+              font-size: 2em;
+            }
+          }
+        }
+
+        .total {
+          margin-top: 25px;
+          display: flex;
+          justify-content: center;
+          font-size: 0.5em;
+        }
+      }
+      .home-page-quote {
+        padding: 10px;
+        background-color: white;
+        width: 80%;
+        font-size: 1.2em;
+        font-style: italic;
+        line-height: 1.5em;
+      }
+
+      .schedule-a-tour-container {
+        border-color: blue;
+      }
+
+      .insta-feed-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+
+        .insta-posts-wrapper {
+          width: 70vw;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          justify-items: center;
+          margin-top: 80px;
+          align-items: center;
+          grid-gap: 20px;
+          .post-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 85vw;
+            height: 85vw;
+            margin: 20px;
+
+            .insta-post-image {
+              width: 85vw;
+              height: 85vw;
+              object-fit: cover;
+              transition: 0.3s ease-in-out;
+            }
+            .post-text {
+              transition: 0.4s ease-in-out;
+
+              position: absolute;
+              z-index: 1;
+              width: 15vw;
+              height: 15vw;
+              color: white;
+
+              display: flex;
+              align-items: center;
+              span {
+                width: 100%;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
