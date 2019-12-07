@@ -1,4 +1,4 @@
-.form-root {
+.footer-form {
   height: 100%;
   width: 100%;
   display: flex;
@@ -42,15 +42,15 @@
   }
 
   input {
-    height: 40px;
-    width: 90%;
+    height: 30px;
+    width: 250px;
     border: none;
     border-radius: 0px;
     padding: 0 15px;
   }
 
   textarea {
-    width: 90%;
+    width: 250px;
     border: none;
     border-radius: 0px;
     padding: 5px 15px;

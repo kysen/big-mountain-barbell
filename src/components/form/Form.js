@@ -1,12 +1,12 @@
 import React from "react";
 
-const Form = ({ body }) => {
+const Form = ({ footer, body }) => {
   return (
-    <div className="footer-form">
+    <div className={footer ? "footer-form" : "form-root"}>
       <input placeholder="Name" />
       <input placeholder="Email" />
       <input placeholder="Phone" />
-      <textarea placeholder="Message" rows="5" defaultValue={body} />
+      <textarea placeholder="Message" rows={footer ? 5 : 10} defaultValue={body} />
       <div className="button" id="button-7">
         <div id="dub-arrow">
           <img
