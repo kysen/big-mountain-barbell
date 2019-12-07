@@ -7,6 +7,7 @@ import Memberships from "./pages/Memberships/memberships";
 import Services from "./pages/Services/services";
 import Coaches from "./pages/Coaches/Coaches";
 import AndyMower from "./pages/Coaches/AndyMower";
+import AnnekeCannon from "./pages/Coaches/AnnekeCannon";
 
 const Switchy = () => {
   return (
@@ -19,6 +20,7 @@ const Switchy = () => {
         <Route path="/services" component={Services} />
         <Route path="/coaches" component={Coaches} />
         <Route path="/andy-mower" component={AndyMower} />
+        <Route path="/anneke-cannon" component={AnnekeCannon} />
       </Switch>
     </div>
   );
