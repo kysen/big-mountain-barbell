@@ -43,7 +43,7 @@ const Coaches = ({ history }) => {
 							}}
 							onMouseEnter={() => setHoveredIndex(i)}
 							onMouseLeave={() => setHoveredIndex(null)}
-							onClick={() => history.push(`coaches/${coach.route}`)}
+							onClick={() => history.push(`${coach.route}`)}
 						>
 							<Motion
 								defaultStyle={{ y: 300 }}
