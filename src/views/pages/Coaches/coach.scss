@@ -1,0 +1,55 @@
+.coach-root {
+	width: 100vw;
+	margin-top: 175px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+	h1 {
+		font-size: 75px;
+	}
+
+	.coach-divider {
+		background: $primaryColor;
+		width: 50%;
+		height: 4px;
+		border-radius: 2px;
+		margin: 50px 0;
+	}
+
+	.coach-image {
+		height: 500px;
+		width: 70%;
+	}
+
+	.coach-content {
+		width: 55%;
+
+		p {
+			font-size: larger;
+		}
+	}
+
+	.coach-button {
+		@include no-select();
+		cursor: pointer;
+		margin-top: 50px;
+		font-size: 30px;
+		border: 3px solid black;
+		padding: 15px;
+		transition: 0.3s ease-in-out;
+		text-decoration: none;
+		border-radius: 5px;
+	
+		&:hover {
+			background: $hoverColor;
+		}
+	
+		&:active {
+			box-shadow: 2px 2px 4px inset black;
+		}
+	}
+
+}
