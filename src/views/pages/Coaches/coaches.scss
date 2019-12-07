@@ -6,6 +6,7 @@
 	justify-content: space-around;
 
 	h1 {
+		text-align: center;
 		font-size: 50px;
 	}
 
@@ -23,7 +24,7 @@
 		margin: 50px 0;
 		
 		:hover {
-			cursor: pointer;
+		  cursor: pointer;
 		}
 
 		.coaches-item {
@@ -31,22 +32,68 @@
 			height: 300px;
 			margin: 20px 3px;
 			overflow: hidden;
-			
-			.coaches-item-name {
-				width: 300px;
-				height: 300px;
-				background: rgba(0, 0, 0, 0.5);
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: space-around;
 
-				h1 {
-					color: white;
-					font-size: 35px;
+			.coaches-desktop {
+				display: inherit;
+
+				.coaches-item-name {
+					width: 300px;
+					height: 300px;
+					background: rgba(0, 0, 0, 0.5);
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-around;
+	
+					h1 {
+						color: white;
+						font-size: 35px;
+					}
 				}
-
 			}
+
+			.coaches-mobile {
+				display: none;
+
+				.coaches-item-name {
+					width: 300px;
+					height: 300px;
+					background: rgba(0, 0, 0, 0.5);
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-around;
+	
+					h1 {
+						color: white;
+						font-size: 35px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.coaches-root {
+		
+    .coaches-container {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.coaches-item {
+
+				.coaches-desktop {
+					display: none;
+				}
+	
+				.coaches-mobile {
+					display: inherit;
+				}
+			}
+
 		}
 	}
 }
