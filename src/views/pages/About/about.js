@@ -2,6 +2,7 @@ import React from "react";
 import TourVid from "./tour-vid";
 import Gallery from "./gallery";
 import Content from "./content";
+import Facility from "./facility";
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
       <TourVid />
       <Content />
       <Gallery />
+      <Facility />
     </div>
   );
 };
