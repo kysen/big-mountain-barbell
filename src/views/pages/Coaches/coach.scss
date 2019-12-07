@@ -9,6 +9,7 @@
 
 	h1 {
 		font-size: 75px;
+		text-align: center;
 	}
 
 	.coach-divider {
@@ -52,4 +53,27 @@
 		}
 	}
 
+}
+
+@media only screen and (max-width: 768px) {
+	.coach-root {
+		
+		h2 {
+			margin: 0 15px;
+		}
+
+		.coach-image {
+			height: 300px;
+			width: 89%;
+			background-position: center;
+		}
+
+		.coach-content {
+			width: 90%;
+	
+			p {
+				font-size: larger;
+			}
+		}
+	}
 }
