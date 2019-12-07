@@ -17,7 +17,7 @@ const Footer = () => {
           <h4>(801) 673-1383</h4>
           <h4>BigMountainBarbell@gmail.com</h4>
         </div>
-        <Form />
+        <Form footer />
       </div>
       <div className="footer-copyright">
         <p>© 2019 BIG MOUNTAIN BARBELL, LLC. All Rights Reserved.</p>

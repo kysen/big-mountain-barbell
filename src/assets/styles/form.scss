@@ -1,5 +1,6 @@
 .footer-form {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,20 +43,21 @@
 
   input {
     height: 40px;
-    width: 250px;
+    width: 90%;
     border: none;
     border-radius: 0px;
     padding: 0 15px;
   }
 
   textarea {
-    width: 250px;
+    width: 90%;
     border: none;
     border-radius: 0px;
     padding: 5px 15px;
     resize: none;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
+    font-size: medium;
   }
 
   .footer-message {
@@ -125,4 +127,17 @@
   #button-7:hover p {
     left: 150px;
   }
+}
+
+@media only screen and (max-width: 768px) {
+	.footer-form {
+		
+    input {
+      height: 50px;
+    }
+  
+    textarea {
+      font-size: medium;
+    }
+	}
 }

@@ -91,9 +91,7 @@ const AndyMower = () => {
 				open={open}
 				close={() => setOpen(false)}
 				header="Contact"
-				body="Dear Big Mountain Barbell Team
-				I am interested in working with coach Andy Bower
-				Please contact me at your earliest convenience"
+				body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with coach Andy Bower.\n\nPlease contact me at your earliest convenience`}
 			/>
 		</div>
 	)
