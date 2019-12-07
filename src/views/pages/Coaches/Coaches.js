@@ -16,12 +16,12 @@ const Coaches = ({ history }) => {
     {
       name: "Anneke Cannon",
       img: anneke_cannon,
-      route: "anneke_cannon",
+      route: "anneke-cannon",
     },
     {
       name: "Anneke Cannon",
       img: anneke_cannon,
-      route: "anneke_cannon",
+      route: "anneke-cannon",
     },
   ];
 
