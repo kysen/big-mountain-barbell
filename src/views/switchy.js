@@ -5,6 +5,7 @@ import Home from "./pages/Home/home";
 import About from "./pages/About/about";
 import Memberships from "./pages/Memberships/memberships";
 import Services from "./pages/Services/services";
+import Coaches from "./pages/Coaches/CoachesRouter";
 
 const Switchy = () => {
   return (
@@ -15,6 +16,7 @@ const Switchy = () => {
         <Route path="/about" component={About} />
         <Route path="/memberships" component={Memberships} />
         <Route path="/services" component={Services} />
+        <Route path="/coaches" component={Coaches} />
       </Switch>
     </div>
   );
