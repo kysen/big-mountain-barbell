@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = ({ footer, body }) => {
   return (
-    <div className="footer-form">
+    <div className={footer ? "footer-form" : "form-root"}>
       <input placeholder="Name" />
       <input placeholder="Email" />
       <input placeholder="Phone" />
