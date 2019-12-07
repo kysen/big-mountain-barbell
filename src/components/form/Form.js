@@ -3,7 +3,7 @@ import React from "react";
 const Form = () => {
   const handleClick = e => {
     // e.stopPropagation();
-  }
+  };
 
   return (
     <div className="footer-form">

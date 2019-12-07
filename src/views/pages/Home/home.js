@@ -39,10 +39,7 @@ const Home = () => {
           client results."
         </div>
         <InstaFeed />
-        {/* <div className="schedule-a-tour-container" onClick={() => {
-          setOpen(true);
-          console.log('clicked');
-        }}>schedule a tour</div> */}
+
         <Modal open={open} close={() => setOpen(false)} header="Contact" />
       </div>
     </div>

@@ -1,10 +1,26 @@
 import React from "react";
 
 const ServiceItem = props => {
-  // var d = document.getElementById("learn-more");
-  // d.style.position = "absolute";
-  // d.style.left = x_pos + "px";
-  // d.style.top = y_pos + "px";
+  const open = () => {
+    props.setOpen(true);
+  };
+
+  const learnMoreShow = () => {
+    return (
+      <a className="learn-more" href={props.url}>
+        {props.learnMore}
+      </a>
+    );
+  };
+
+  const contactUs = () => {
+    return (
+      <div className="learn-more" onClick={() => open()}>
+        {props.learnMore}
+      </div>
+    );
+  };
+
   return (
     <div className="service-item-wrapper">
       <img src={props.image} alt="one" />
@@ -12,7 +28,8 @@ const ServiceItem = props => {
         <div className="header">{props.title}</div>
         {props.content}
         <div>{props.pricing}</div>
-        <div className="learn-more">Learn More</div>
+        {props.learnMore === "Contact Us" ? contactUs() : ""}
+        {props.learnMore === "Learn More" ? learnMoreShow() : ""}
       </div>
     </div>
   );
