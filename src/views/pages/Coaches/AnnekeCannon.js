@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "../../../components/Modal/Modal";
-const andy_mower = require("../../../assets/images/coaches/andy_mower.png");
+const anneke_cannon = require("../../../assets/images/coaches/anneke_cannon.jpg");
 
 const AnnekeCannon = () => {
   const [open, setOpen] = useState(false);
@@ -11,9 +11,9 @@ const AnnekeCannon = () => {
       <div
         className="coach-image"
         style={{
-          backgroundImage: `url(${andy_mower})`,
+          backgroundImage: `url(${anneke_cannon})`,
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat"
+          backgroundRepeat: "no-repeat",
         }}
       />
       <div className="coach-divider" />
@@ -31,9 +31,7 @@ const AnnekeCannon = () => {
           passion helping people with their health through physical fitness and
           proper nutrition.
         </p>
-
         <br />
-
         <p>
           Anneke became a Certified Personal Trainer through the National
           Academy of Sports Medicine in 2013. Since her certification she has
@@ -41,32 +39,27 @@ const AnnekeCannon = () => {
           wonderful clients. She is also a certified USPA Powerlifting
           instructor.
         </p>
-
         <br />
-
         <p>
-          Anneke&rsquo;s main goal with all of her clients is to help them to
-          see the true strength that each and every person has inside of them.
-          She believes that you can achieve anything that you set your mind to
-          if you just work for it!
+          Anneke's main goal with all of her clients is to help them to see the
+          true strength that each and every person has inside of them. She
+          believes that you can achieve anything that you set your mind to if
+          you just work for it!
         </p>
-
-        <p> </p>
-
+        <br />
         <p>
           She is an elite level, nationally qualified raw powerlifter and NPC
           Bikini Competitor. Anneke lives near Salt Lake City, UT with her
           husband, Ryan, her son, Miles, and their bulldog, Rooney. As a new
           mother, she stays busy between keeping up with Miles, running all of
-          the behind the scenes work for Fitbliss, and coaching clients &amp;
+          the behind the scenes work for Fitbliss, and coaching clients &
           herself in the gym.
         </p>
-
-        <p>&#8203;</p>
+        <br />
         <div
           style={{
             color: "grey",
-            fontStyle: "italic"
+            fontStyle: "italic",
           }}
         >
           <p>NASM CPT</p>
@@ -76,10 +69,6 @@ const AnnekeCannon = () => {
         </div>
       </div>
       <div className="coach-divider" />
-      <h2>
-        Andy has small group powerlifting sessions available 2-4 days per week
-        and private personal training slots available as well.
-      </h2>
       <div className="coach-button" onClick={setOpen}>
         Book Now
       </div>

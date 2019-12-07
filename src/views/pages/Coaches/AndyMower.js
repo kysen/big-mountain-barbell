@@ -13,7 +13,7 @@ const AndyMower = () => {
         style={{
           backgroundImage: `url(${andy_mower})`,
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat"
+          backgroundRepeat: "no-repeat",
         }}
       />
       <div className="coach-divider" />
