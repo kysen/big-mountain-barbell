@@ -8,6 +8,9 @@ import Services from "./pages/Services/services";
 import Coaches from "./pages/Coaches/Coaches";
 import AndyMower from "./pages/Coaches/AndyMower";
 import AnnekeCannon from "./pages/Coaches/AnnekeCannon";
+import BenAnderson from "./pages/Coaches/BenAnderson";
+import CecilyLewis from "./pages/Coaches/CecilyLewis";
+import DevanNielsen from "./pages/Coaches/DevanNielsen";
 
 const Switchy = () => {
   return (
@@ -21,6 +24,9 @@ const Switchy = () => {
         <Route path="/coaches" component={Coaches} />
         <Route path="/andy-mower" component={AndyMower} />
         <Route path="/anneke-cannon" component={AnnekeCannon} />
+        <Route path="/ben-anderson" component={BenAnderson} />
+        <Route path="/cecily-lewis" component={CecilyLewis} />
+        <Route path="/devan-nielsen" component={DevanNielsen} />
       </Switch>
     </div>
   );
