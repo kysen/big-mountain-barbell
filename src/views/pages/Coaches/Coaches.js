@@ -3,6 +3,9 @@ import { Motion, spring } from "react-motion";
 import { withRouter } from "react-router-dom";
 const andy_mower = require("../../../assets/images/coaches/andy_mower.png");
 const anneke_cannon = require("../../../assets/images/coaches/anneke_cannon.jpg");
+const ben_anderson = require("../../../assets/images/coaches/ben_anderson.jpg");
+const cecily_lewis = require("../../../assets/images/coaches/cecily_lewis.png");
+const devan_nielsen = require("../../../assets/images/coaches/devan_nielsen.jpg");
 
 const Coaches = ({ history }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -12,6 +15,66 @@ const Coaches = ({ history }) => {
       name: "Andy Mower",
       img: andy_mower,
       route: "andy-mower"
+    },
+    {
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
+    },
+    {
+      name: "Ben Anderson",
+      img: ben_anderson,
+      route: "ben-anderson"
+    },
+    {
+      name: "Cecily Lewis",
+      img: cecily_lewis,
+      route: "cecily-lewis"
+    },
+    {
+      name: "Devan Nielsen",
+      img: devan_nielsen,
+      route: "devan-nielsen"
+    },
+    {
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
+    },
+    {
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
+    },
+    {
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
+    },
+    {
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
+    },
+    {
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
+    },
+    {
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
+    },
+    {
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
+    },
+    {
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
     },
     {
       name: "Anneke Cannon",
