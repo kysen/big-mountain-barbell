@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Motion, spring } from "react-motion";
 import { withRouter } from "react-router-dom";
 const andy_mower = require("../../../assets/images/coaches/andy_mower.png");
+const anneke_cannon = require("../../../assets/images/coaches/anneke_cannon.jpg");
 
 const Coaches = ({ history }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -13,29 +14,14 @@ const Coaches = ({ history }) => {
       route: "andy-mower"
     },
     {
-      name: "Andy Mower",
-      img: andy_mower,
-      route: "andy-mower"
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
     },
     {
-      name: "Andy Mower",
-      img: andy_mower,
-      route: "andy-mower"
-    },
-    {
-      name: "Andy Mower",
-      img: andy_mower,
-      route: "andy-mower"
-    },
-    {
-      name: "Andy Mower",
-      img: andy_mower,
-      route: "andy-mower"
-    },
-    {
-      name: "Andy Mower",
-      img: andy_mower,
-      route: "andy-mower"
+      name: "Anneke Cannon",
+      img: anneke_cannon,
+      route: "anneke-cannon"
     }
   ];
 
