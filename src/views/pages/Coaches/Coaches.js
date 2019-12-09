@@ -10,33 +10,33 @@ const Coaches = ({ history }) => {
     {
       name: "Andy Mower",
       img: andy_mower,
-      route: "andy-mower",
+      route: "andy-mower"
     },
     {
       name: "Andy Mower",
       img: andy_mower,
-      route: "andy-mower",
+      route: "andy-mower"
     },
     {
       name: "Andy Mower",
       img: andy_mower,
-      route: "andy-mower",
+      route: "andy-mower"
     },
     {
       name: "Andy Mower",
       img: andy_mower,
-      route: "andy-mower",
+      route: "andy-mower"
     },
     {
       name: "Andy Mower",
       img: andy_mower,
-      route: "andy-mower",
+      route: "andy-mower"
     },
     {
       name: "Andy Mower",
       img: andy_mower,
-      route: "andy-mower",
-    },
+      route: "andy-mower"
+    }
   ];
 
   return (
@@ -53,7 +53,7 @@ const Coaches = ({ history }) => {
                 backgroundImage: `url(${coach.img})`,
                 backgroundPosition: "50% 50%",
                 backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
+                backgroundRepeat: "no-repeat"
               }}
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
@@ -65,15 +65,15 @@ const Coaches = ({ history }) => {
                   style={{
                     y: spring(hoveredIndex === i ? 0 : 300, {
                       stiffness: 50,
-                      damping: 12,
-                    }),
+                      damping: 12
+                    })
                   }}
                 >
                   {style => (
                     <div
                       className="coaches-item-name"
                       style={{
-                        transform: `translateY(${style.y}px)`,
+                        transform: `translateY(${style.y}px)`
                       }}
                     >
                       <h1>{coach.name}</h1>
