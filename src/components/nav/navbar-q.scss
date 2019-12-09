@@ -1,0 +1,93 @@
+@media only screen and (max-width: 768px) {
+  .nav-bar-wrapper {
+    width: 100vw;
+    .nav-bar {
+      width: 85vw;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      .nav-bar-logo-wrapper {
+        .nav-bar-logo {
+          height: 150px;
+        }
+  
+        .nav-bar-logo-heading-wrapper {  
+          .nav-bar-logo-heading {
+            font-size: 13px;
+
+          }
+        }
+      }
+  
+      .nav-bar-buttons-wrapper {
+        order: 3;  
+        .nav-bar-button {
+          font-size: .8em;
+          height: 0px;
+          padding: 20px 10px;  
+        }
+  
+        .nav-bar-button-invisible {
+          font-size: .8em;
+          height: 0px;
+          padding: 20px 10px;  
+        }
+  
+        .nav-bar-button-active {
+          background-color: $primaryColor;
+          color: #fff;
+          border-radius: 5px;
+  
+          &:hover {
+            background-color: $primaryColor;
+          }
+        }
+        .nav-bar-button-invisible-active {
+          color: $primaryColor;
+        }
+      }
+  
+      .nav-bar-social-wrapper {
+        order: 2;
+        margin: 20px;
+        width: 150px;
+
+        .icon-wrapper {
+          width: calc(100% / 3);
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: black;
+          &:hover {
+            font-size: 1.3em;
+            // transform: rotate(20deg);
+            color: $primaryColor;
+          }
+          .icon {
+            font-size: 2em;
+            transition: 0.2s ease-in-out;
+          }
+        }
+        .icon-wrapper-invisible {
+          width: calc(100% / 3);
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          &:hover {
+            font-size: 1.3em;
+            // transform: rotate(20deg);
+            color: $primaryColor;
+          }
+          .icon {
+            font-size: 2em;
+            transition: 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

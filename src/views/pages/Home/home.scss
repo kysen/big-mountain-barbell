@@ -4,7 +4,6 @@
   align-items: center;
 
   .home-page-content {
-    // margin-top: 100vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -88,10 +87,9 @@
           width: 20vw;
           height: 20vw;
           margin: 20px;
+          cursor: pointer;
 
-          &:hover {
-            cursor: pointer;
-          }
+
 
           .insta-post-image {
             width: 20vw;
