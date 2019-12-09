@@ -9,6 +9,11 @@
 @import "./modal.scss";
 @import "./footerform.scss";
 @import "./form.scss";
+@import "../../components/nav/navbar-q.scss";
+// @import "../../components/footer/footer-q.scss";
+// @import "./modal-q.scss";
+// @import "./footerform-q.scss";
+// @import "./form-q.scss";
 
 @import "../../views/pages/Home/home.scss";
 @import "../../views/pages/Home/hype-video.scss";
@@ -17,14 +22,17 @@
 
 @import "../../views/pages/Coaches/coaches.scss";
 @import "../../views/pages/Coaches/coach.scss";
+// @import "../../views/pages/Coaches/coaches-q.scss";
+// @import "../../views/pages/Coaches/coach-q.scss";
 
 @import "../../views/pages/About/about.scss";
+// @import "../../views/pages/About/about-q.scss";
 
 @import "../../views/pages/Services/services.scss";
 @import "../../views/pages/Services/services-q.scss";
 
 @import "../../views/pages/Memberships/memberships.scss";
-@import "./contact.scss";
+// @import "../../views/pages/Memberships/memberships-q.scss";
 
 .pages-wrapper {
   display: flex;

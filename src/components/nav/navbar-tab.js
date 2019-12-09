@@ -14,6 +14,7 @@ const NavbarTab = props => {
       }
       exact
       to={props.tab.toLowerCase()}
+      onClick={() => {props.setScrollTrigger(true)}}
     >
       {props.tab === "/" ? "HOME" : props.tab}
     </NavLink>

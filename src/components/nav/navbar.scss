@@ -1,15 +1,16 @@
 .nav-bar-wrapper {
   width: 100vw;
-  min-width: 715px;
+  // min-width: 715px;
+  position: fixed;
   background: white;
   display: flex;
   justify-content: center;
-  position: fixed;
   transition: 0.3s ease-in-out;
   z-index: 2;
+  height: auto;
 
   .nav-bar {
-    height: 125px;
+    // height: 125px;
     width: 85vw;
     display: flex;
     justify-content: center;
@@ -54,7 +55,7 @@
       width: 80%;
       padding-right: 40px;
       padding-left: 40px;
-      transition: 0.4 s ease-in-out;
+      transition: 0.4s ease-in-out;
       @include no-select();
 
       .nav-bar-button {

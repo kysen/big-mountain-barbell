@@ -40,6 +40,7 @@ const Navbar = props => {
           scrollTrigger={scrollTrigger}
           currentContent={props.currentContent}
           setCurrentContent={props.setCurrentContent}
+          setScrollTrigger={setScrollTrigger}
           tab={tab}
         />
       );
@@ -58,7 +59,7 @@ const Navbar = props => {
       <nav className="nav-bar">
         <div
           className="nav-bar-logo-wrapper"
-          style={scrollTrigger ? {} : { visibility: "hidden" }}
+          style={scrollTrigger ? {} : { display: "none" }}
         >
           <img className="nav-bar-logo" src={logo} alt="hello" />
           <div className="nav-bar-logo-heading-wrapper">
