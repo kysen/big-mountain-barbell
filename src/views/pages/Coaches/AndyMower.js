@@ -12,8 +12,10 @@ const AndyMower = () => {
         className="coach-image"
         style={{
           backgroundImage: `url(${andy_mower})`,
-          backgroundSize: "cover",
+          backgroundSize: "100% auto",
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          width: "800px"
         }}
       />
       <div className="coach-divider" />
