@@ -23,21 +23,21 @@ const Services = () => {
         setOpen={setOpen}
         content={
           <div className="content">
-            <p>
+            <div>
               This is an in gym experience with a trainer who is with you from
               your first day until you've reached your goal. After goals are
               established your trainer will then create a custom program for you
               and guidance is given throughout for additional guided workouts on
               your own.
-            </p>
-            <p>
+            </div>
+            <div>
               <div className="bold">
                 Additional one on one training options available:
               </div>
               Partner or Couples training
               <br />
               Small group training
-            </p>
+            </div>
           </div>
         }
         pricing="$40-$85/hr"
@@ -49,15 +49,15 @@ const Services = () => {
         url={"https://www.chiromovement.com/"}
         content={
           <div className="content">
-            <p>
+            <div>
               Lifting hard leaving you hurt, strained or unable to do you other
               daily activities? Are your movements restricted and keeping you
               from the top of your game? ChiroMovement is located inside Big
               Mountain Barbell and is ready to help you feel better, move better
               and recover faster. ChiroMovement is the go-to sports chiropractor
               at all Utah Powerlifting Association competitions.
-            </p>
-            {/* <p>
+            </div>
+            {/* <div>
               Dr. Bird is a local from Utah, graduating from both Salt Lake
               Community College and the University of Utah before attending the
               Cleveland University in Kansas City. As a Doctor of Chiropractic,
@@ -65,15 +65,15 @@ const Services = () => {
               appointment has a personalized mix of chiropractic adjustments and
               soft tissue work. Dry needling and taping are also used when
               needed.{" "}
-            </p> */}
-            <p>
+            </div> */}
+            <div>
               Making an appointment is easy – visit{" "}
               <a href="https://chiromovement.janeapp.com/#/staff_member/1/treatment/1">
                 chiromovement.janeapp.com
               </a>
               , call 801-251-6658, or just walk in and talk to the doctor
               yourself."
-            </p>
+            </div>
           </div>
         }
       />
@@ -84,13 +84,13 @@ const Services = () => {
         setOpen={setOpen}
         content={
           <div className="content">
-            <p>
+            <div>
               Interested in learning about macro based flexible dieting? We can
               help teach you all the ins and outs of macronutrients and how to
               implement this in to your life. We will work with you to customize
               a plan specifically for you and modify as needed to help you reach
               your goal.
-            </p>
+            </div>
           </div>
         }
         pricing="$99-149/monthly"
@@ -102,10 +102,10 @@ const Services = () => {
         learnMore={"Learn More"}
         content={
           <div className="content">
-            <p className="p-bigger">
+            <div className="p-bigger">
               Do you feel like it’s time to make a positive change in your life?
               Ready to be a part of an empowering group of badass women?
-            </p>
+            </div>
           </div>
         }
       />
@@ -116,14 +116,14 @@ const Services = () => {
         setOpen={setOpen}
         content={
           <div className="content">
-            <p>
+            <div>
               Feeling lost in the gym? Just need to change up your workout
               routine? This option is for those who want to start a new workout
               routine, are looking to freshen up their current workout schedule,
               or need help achieving specific strength or physique goals. This
               option includes monthly workouts specifically created for your
               lifestyle and goals.
-            </p>
+            </div>
           </div>
         }
         pricing="$49+/monthly"
@@ -135,7 +135,7 @@ const Services = () => {
         url={"https://www.vagaro.com/dripsweatboxingfitness"}
         content={
           <div className="content">
-            <p>
+            <div>
               Drip Sweat Boxing and Fitness combines boxing fitness with
               strength and conditioning in a team environment. You’ll learn real
               boxing technique, power through circuits and get a full body
@@ -145,7 +145,7 @@ const Services = () => {
               sessions where you’ll be able to conquer the sweet science of
               boxing at a quicker pace. Come by and switch up your workout with
               us!
-            </p>
+            </div>
           </div>
         }
       />
