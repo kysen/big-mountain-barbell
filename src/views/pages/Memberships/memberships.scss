@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -10% 40%;
-  height: 100vh;
+  min-height: 100vh;
   .img-container {
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@
   }
   .memberships-info-container {
     width: 40vw;
-    height: 100vh;
+    // height: 100vh;
     background-color: rgba(0, 0, 0, 0.61);
     backdrop-filter: blur(70px);
     transition: 0.4s ease-in-out;

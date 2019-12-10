@@ -6,6 +6,11 @@ const anneke_cannon = require("../../../assets/images/coaches/anneke_cannon.jpg"
 const ben_anderson = require("../../../assets/images/coaches/ben_anderson.jpg");
 const cecily_lewis = require("../../../assets/images/coaches/cecily_lewis.png");
 const devan_nielsen = require("../../../assets/images/coaches/devan_nielsen.jpg");
+const hill_goldstein = require("../../../assets/images/coaches/hill_goldstein.jpg");
+const jason_gonzales = require("../../../assets/images/coaches/jason_gonzales.jpg");
+const katie_baretela = require("../../../assets/images/coaches/katie_baretela.jpg");
+const lynndsey_eldridge = require("../../../assets/images/coaches/lynndsey_eldridge.jpg");
+const megan_forrest = require("../../../assets/images/coaches/megan_forrest.jpg");
 
 const Coaches = ({ history }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -36,35 +41,35 @@ const Coaches = ({ history }) => {
       img: devan_nielsen,
       route: "devan-nielsen"
     },
+    // {
+    //   name: "Anneke Cannon",
+    //   img: anneke_cannon,
+    //   route: "anneke-cannon"
+    // },
     {
-      name: "Anneke Cannon",
-      img: anneke_cannon,
-      route: "anneke-cannon"
+      name: "Hillary Goldstein",
+      img: hill_goldstein,
+      route: "hill-goldstein"
     },
     {
-      name: "Anneke Cannon",
-      img: anneke_cannon,
-      route: "anneke-cannon"
+      name: "Jason Gonzales",
+      img: jason_gonzales,
+      route: "jason-gonzales"
     },
     {
-      name: "Anneke Cannon",
-      img: anneke_cannon,
-      route: "anneke-cannon"
+      name: "Katie Baretela",
+      img: katie_baretela,
+      route: "katie-baretela"
     },
     {
-      name: "Anneke Cannon",
-      img: anneke_cannon,
-      route: "anneke-cannon"
+      name: "Lynndsey Eldridge",
+      img: lynndsey_eldridge,
+      route: "lynndsey-eldridge"
     },
     {
-      name: "Anneke Cannon",
-      img: anneke_cannon,
-      route: "anneke-cannon"
-    },
-    {
-      name: "Anneke Cannon",
-      img: anneke_cannon,
-      route: "anneke-cannon"
+      name: "Megan Forrest",
+      img: megan_forrest,
+      route: "megan-forrest"
     },
     {
       name: "Anneke Cannon",
