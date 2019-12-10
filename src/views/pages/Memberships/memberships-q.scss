@@ -1,0 +1,89 @@
+@media only screen and (max-width: 768px) {
+  .memberships-container {
+    flex-direction: column;
+    background-image: none;
+    width: 100vw;
+
+    .img-container {
+      background-image: url("https://static.wixstatic.com/media/6f02ec_b10f3b7375404595843e149a976d5bad~mv2.jpg/v1/fill/w_845,h_1080,al_c,q_85/6f02ec_b10f3b7375404595843e149a976d5bad~mv2.webp");
+      background-size: unset;
+      background-repeat: repeat;
+      height: 400px;
+
+      display: flex;
+      justify-content: center;
+      .memberships-img {
+        display: flex;
+        justify-content: center;
+
+        .header-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 80vw;
+        }
+
+        .memberships-img-header {
+          text-shadow: 2px 2px 40px #000000;
+          width: inherit;
+          text-align: center;
+          font-size: 2.5em;
+          color: #fff;
+          font-weight: bolder;
+          @include no-select();
+        }
+
+        .header1 {
+          margin-top: 30vh;
+        }
+      }
+    }
+    background-image: url("https://static.wixstatic.com/media/6f02ec_b10f3b7375404595843e149a976d5bad~mv2.jpg/v1/fill/w_845,h_1080,al_c,q_85/6f02ec_b10f3b7375404595843e149a976d5bad~mv2.webp");
+    .memberships-info-container {
+      width: 100vw;
+      // height: 100vh;
+      background-color: rgba(0, 0, 0, 0.61);
+      backdrop-filter: blur(70px);
+      transition: 0.4s ease-in-out;
+      @include no-select();
+
+      .info-all {
+        padding: 20px;
+        color: #fff;
+        margin-top: 0px;
+      }
+
+      .sec1 {
+        margin-top: 0px;
+        height: auto;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .sec2 {
+        font-size: 30px;
+        font-weight: bolder;
+      }
+
+      .sec3 {
+        padding-left: 50px;
+        list-style-type: circle;
+        font-size: 25px;
+      }
+
+      .sec4 {
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+        .bold {
+          font-size: 40px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ const Facility = () => {
         <div className="facility-info">
           <h1>Facility</h1>
           <p>
-            Equipment: 19 Squat Racks,Powerlifting Monolift, Chains, bands for
+            Equipment: 19 Squat Racks, Powerlifting Monolift, Chains, bands for
             Powerlifting training, 3 Olympic Weightlifting Platforms outfitted
             with complete Eleiko women's and men's barbell and plate sets, Jerk
             Blocks, 3 Deadlift Platforms, Forza Bench, Powerlifting Bench with
