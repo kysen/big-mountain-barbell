@@ -62,7 +62,7 @@
       line-height: 30px;
       font-size: 1.3em;
 
-      .facility-info {
+      div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -70,28 +70,7 @@
         h1 {
           height: 40px;
           font-size: 1.4em;
-        }
-      }
-
-      .mission {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        h1 {
-          height: 40px;
-          font-size: 1.4em;
-        }
-      }
-
-      .info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        h1 {
-          height: 40px;
-          font-size: 1.4em;
+          margin-top: 20px;
         }
       }
     }
