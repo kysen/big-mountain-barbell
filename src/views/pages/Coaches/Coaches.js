@@ -11,6 +11,11 @@ const jason_gonzales = require("../../../assets/images/coaches/jason_gonzales.jp
 const katie_baretela = require("../../../assets/images/coaches/katie_baretela.jpg");
 const lynndsey_eldridge = require("../../../assets/images/coaches/lynndsey_eldridge.jpg");
 const megan_forrest = require("../../../assets/images/coaches/megan_forrest.jpg");
+const michelle_carlson = require("../../../assets/images/coaches/michelle_carlson.jpg");
+const nicky_barz = require("../../../assets/images/coaches/nicky_barz.jpg");
+const sami_clements = require("../../../assets/images/coaches/sami_clements.png");
+const taylor = require("../../../assets/images/coaches/taylor.JPG");
+const braden = require("../../../assets/images/coaches/braden.jpg");
 
 const Coaches = ({ history }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -72,24 +77,29 @@ const Coaches = ({ history }) => {
       route: "megan-forrest"
     },
     {
-      name: "Anneke Cannon",
-      img: anneke_cannon,
-      route: "anneke-cannon"
+      name: "Michelle Carlson",
+      img: michelle_carlson,
+      route: "michelle-carlson"
     },
     {
-      name: "Anneke Cannon",
-      img: anneke_cannon,
-      route: "anneke-cannon"
+      name: "Nicky Barz",
+      img: nicky_barz,
+      route: "nicky-barz"
     },
     {
-      name: "Anneke Cannon",
-      img: anneke_cannon,
-      route: "anneke-cannon"
+      name: "Sami Clements",
+      img: sami_clements,
+      route: "sami-clements"
     },
     {
-      name: "Anneke Cannon",
-      img: anneke_cannon,
-      route: "anneke-cannon"
+      name: "Taylor",
+      img: taylor,
+      route: "taylor"
+    },
+    {
+      name: "Braden",
+      img: braden,
+      route: "braden"
     }
   ];
 
