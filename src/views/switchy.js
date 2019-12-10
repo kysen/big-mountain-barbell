@@ -16,6 +16,11 @@ import JasonGonzales from "./pages/Coaches/JasonGonzales";
 import KatieBaretela from "./pages/Coaches/KatieBaretela";
 import LynndseyEldridge from "./pages/Coaches/LynndseyEldridge";
 import MeganForrest from "./pages/Coaches/MeganForrest";
+import MichelleCarlson from "./pages/Coaches/MichelleCarlson";
+import NickyBarz from "./pages/Coaches/NickyBarz";
+import SamiClements from "./pages/Coaches/SamiClements";
+import Taylor from "./pages/Coaches/Taylor";
+import Braden from "./pages/Coaches/Braden";
 
 const Switchy = () => {
   return (
@@ -37,6 +42,11 @@ const Switchy = () => {
         <Route path="/katie-baretela" component={KatieBaretela} />
         <Route path="/lynndsey-eldridge" component={LynndseyEldridge} />
         <Route path="/megan-forrest" component={MeganForrest} />
+        <Route path="/michelle-carlson" component={MichelleCarlson} />
+        <Route path="/nicky-barz" component={NickyBarz} />
+        <Route path="/sami-clements" component={SamiClements} />
+        <Route path="/taylor" component={Taylor} />
+        <Route path="/braden" component={Braden} />
       </Switch>
     </div>
   );
