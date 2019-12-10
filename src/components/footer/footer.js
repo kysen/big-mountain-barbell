@@ -1,6 +1,8 @@
 import React from "react";
 import Form from "../form/Form";
 
+import Linkify from "react-linkify";
+
 const Footer = () => {
   return (
     <div id="footer-container">
@@ -14,8 +16,12 @@ const Footer = () => {
           >
             <h4>741 Smelter Street, Midvale, Utah 84047</h4>
           </a>
-          <h4>(801) 673-1383</h4>
-          <h4>BigMountainBarbell@gmail.com</h4>
+          <Linkify>
+            <h4>(801)673-1383</h4>
+          </Linkify>
+          <Linkify>
+            <h4>BigMountainBarbell@gmail.com</h4>
+          </Linkify>
         </div>
         <Form footer />
       </div>

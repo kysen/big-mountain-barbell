@@ -17,6 +17,7 @@
     "react-fontawesome": "^1.6.1",
     "react-ga": "^2.7.0",
     "react-image-gallery": "^0.9.1",
+    "react-linkify": "^1.0.0-alpha",
     "react-modal-video": "^1.2.3",
     "react-motion": "^0.5.2",
     "react-navigation-hooks": "^1.1.0",
