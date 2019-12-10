@@ -13,7 +13,7 @@ const AnnekeCannon = () => {
         style={{
           backgroundImage: `url(${anneke_cannon})`,
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
+          backgroundRepeat: "no-repeat"
         }}
       />
       <div className="coach-divider" />
@@ -59,7 +59,7 @@ const AnnekeCannon = () => {
         <div
           style={{
             color: "grey",
-            fontStyle: "italic",
+            fontStyle: "italic"
           }}
         >
           <p>NASM CPT</p>
@@ -76,7 +76,7 @@ const AnnekeCannon = () => {
         open={open}
         close={() => setOpen(false)}
         header="Contact"
-        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with coach Anneke Cannon.\n\nPlease contact me at your earliest convenience`}
+        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Anneke Cannon.\n\nPlease contact me at your earliest convenience`}
       />
     </div>
   );
