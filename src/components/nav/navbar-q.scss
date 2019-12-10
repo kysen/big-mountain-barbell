@@ -1,44 +1,44 @@
 @media only screen and (max-width: 768px) {
   .nav-bar-wrapper {
-    width: 100vw;
     .nav-bar {
-      width: 85vw;
-      display: flex;
-      justify-content: center;
       flex-direction: column;
       align-items: center;
       .nav-bar-logo-wrapper {
         .nav-bar-logo {
-          height: 150px;
+          height: 100px;
         }
-  
-        .nav-bar-logo-heading-wrapper {  
+
+        .nav-bar-logo-heading-wrapper {
           .nav-bar-logo-heading {
             font-size: 13px;
-
           }
         }
       }
-  
+
       .nav-bar-buttons-wrapper {
-        order: 3;  
+        order: 3;
+        justify-content: center;
         .nav-bar-button {
-          font-size: .8em;
+          font-size: 0.8em;
           height: 0px;
-          padding: 20px 10px;  
+          padding: 15px 5px;
+
+          &:hover {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+          }
         }
-  
+
         .nav-bar-button-invisible {
-          font-size: .8em;
+          font-size: 0.8em;
           height: 0px;
-          padding: 20px 10px;  
+          padding: 15px 5px;
         }
-  
+
         .nav-bar-button-active {
           background-color: $primaryColor;
           color: #fff;
-          border-radius: 5px;
-  
+
           &:hover {
             background-color: $primaryColor;
           }
@@ -47,7 +47,7 @@
           color: $primaryColor;
         }
       }
-  
+
       .nav-bar-social-wrapper {
         order: 2;
         margin: 20px;
@@ -55,7 +55,7 @@
 
         .icon-wrapper {
           width: calc(100% / 3);
-          height: 100%;
+          height: 10px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -66,24 +66,25 @@
             color: $primaryColor;
           }
           .icon {
-            font-size: 2em;
+            font-size: 1.2em;
             transition: 0.2s ease-in-out;
           }
         }
         .icon-wrapper-invisible {
-          width: calc(100% / 3);
+          width: auto;
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
           color: white;
+
           &:hover {
             font-size: 1.3em;
             // transform: rotate(20deg);
             color: $primaryColor;
           }
           .icon {
-            font-size: 2em;
+            font-size: 1.2em;
             transition: 0.2s ease-in-out;
           }
         }
