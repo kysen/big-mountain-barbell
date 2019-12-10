@@ -13,13 +13,12 @@ const Form = ({ footer, body, close }) => {
   };
 
   const submit = async () => {
-    console.log(form);
     try {
       let text = `${form.body}\n${form.name}\n${form.email}\n${form.phone}`;
       let result = await axios.post(
         "https://us-central1-exposure-increase.cloudfunctions.net/api/v1/emails",
         {
-          subject: "Website Outreach",
+          subject: `Website Outreach - ${form.name}`,
           to: "jacobdman5@gmail.com",
           text,
         },
