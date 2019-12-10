@@ -11,6 +11,22 @@ const Home = () => {
     <div className="home-container">
       <HypeVideo setOpen={setOpen} />
       <div className="home-page-content">
+        <div className="home-page-quote" style={{ marginTop: "40px" }}>
+          We are a Private Gym who serves a diverse community of athletes and
+          members from all ages, backgrounds and skill levels.
+          <br />
+          <br />
+          We offer private personal training, sport specific coaching, group
+          classes, 24/7 access monthly gym memberships and good vibes.
+        </div>
+
+        <div className="home-page-quote">
+          "Our mission is to provide safe, efficient, effective and balanced
+          fitness and nutrition coaching in a positive and welcoming environment
+          using research-based programming. We ensure that all trainers are
+          experienced, knowledgeable, motivating and that they truly care about
+          client results."
+        </div>
         <div className="reviews-container">
           <div className="reviews-header">
             <h1>Overall Customer Rating:</h1>
@@ -30,13 +46,6 @@ const Home = () => {
           <div className="total">
             <h1>( 90 Google Reviews )</h1>
           </div>
-        </div>
-        <div className="home-page-quote">
-          "Our mission is to provide safe, efficient, effective and balanced
-          fitness and nutrition coaching in a positive and welcoming environment
-          using research-based programming. We ensure that all trainers are
-          experienced, knowledgeable, motivating and that they truly care about
-          client results."
         </div>
         <InstaFeed />
 
