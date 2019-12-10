@@ -123,7 +123,7 @@ const DevanNielsen = () => {
         open={open}
         close={() => setOpen(false)}
         header="Contact"
-        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with coach Devan Nielsen.\n\nPlease contact me at your earliest convenience`}
+        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Devan Nielsen.\n\nPlease contact me at your earliest convenience`}
       />
     </div>
   );
