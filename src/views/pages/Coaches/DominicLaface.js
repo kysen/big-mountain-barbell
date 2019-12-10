@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Modal from "../../../components/Modal/Modal";
-const ben_anderson = require("../../../assets/images/coaches/ben_anderson.jpg");
+const dominic_laface = require("../../../assets/images/coaches/ben_anderson.jpg");
 
-const BenAnderson = () => {
+const DominicLaface = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="coach-root">
-      <h1>Ben Anderson</h1>
+      <h1>Dominic Laface</h1>
       <div className="coach-divider" />
       <div
         className="coach-image"
@@ -69,4 +69,4 @@ const BenAnderson = () => {
   );
 };
 
-export default BenAnderson;
+export default DominicLaface;
