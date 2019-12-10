@@ -1,5 +1,4 @@
 .services-container {
-  margin-top: 125px;
   .service-item-wrapper {
     display: grid;
     grid-template-columns: 50vw 50vw;
@@ -30,7 +29,7 @@
         font-size: 18px;
         width: 70%;
 
-        p {
+        div {
           margin-top: 20px;
           width: 100%;
           .bold {

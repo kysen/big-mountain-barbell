@@ -11,6 +11,7 @@
     .memberships-img {
       display: flex;
       justify-content: center;
+      flex-direction: column;
 
       .header-wrapper {
         display: flex;
@@ -27,11 +28,14 @@
         color: #fff;
         font-weight: bolder;
         @include no-select();
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
 
-      .header1 {
-        margin-top: 30vh;
-      }
+      // .header1 {
+      //   margin-top: 30vh;
+      // }
     }
   }
   .memberships-info-container {
@@ -49,7 +53,7 @@
     }
 
     .sec1 {
-      margin-top: 200px;
+      margin-top: 30px;
       height: auto;
       font-weight: bold;
       font-size: 20px;

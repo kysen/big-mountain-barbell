@@ -8,12 +8,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: flex-end;
+    // height: calc(100vh - 125px);
     video {
       object-fit: cover;
       width: 100vw;
-      height: calc(100vh - 112px);
-      margin-top: 112px;
+      height: 41vw;
     }
   }
 
