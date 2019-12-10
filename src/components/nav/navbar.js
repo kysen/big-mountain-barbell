@@ -7,7 +7,7 @@ import NavbarTab from "./navbar-tab";
 import { withRouter } from "react-router-dom";
 
 const Navbar = props => {
-  const logo = require("../../assets/images/big-mountain-barbell-logo.jpg");
+  const logo = require("../../assets/images/big-logo-cropped.png");
   const [scrollTrigger, setScrollTrigger] = useState(false);
 
   useEffect(() => {
@@ -63,8 +63,15 @@ const Navbar = props => {
         >
           <img className="nav-bar-logo" src={logo} alt="hello" />
           <div className="nav-bar-logo-heading-wrapper">
-            <h3 className="nav-bar-logo-heading">741 Smelter Street</h3>
-            <h3 className="nav-bar-logo-heading">Midvale, UT 84047</h3>
+            <a
+              className="nav-bar-logo-heading"
+              href="https://www.google.com/maps/place/741+Smelter+St,+Midvale,+UT+84047/@40.6120876,-111.9131705,17z/data=!3m1!4b1!4m5!3m4!1s0x875288fddbea93af:0x218b4d7554fd2324!8m2!3d40.6120876!4d-111.9109818"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              741 Smelter Street <br />
+              Midvale, UT 84047
+            </a>
           </div>
         </div>
 

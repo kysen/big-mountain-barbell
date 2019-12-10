@@ -25,12 +25,15 @@
       padding-left: 20px;
       padding-right: 20px;
       @include no-select();
+      margin-bottom: 5px;
 
       .nav-bar-logo {
+        height: 80px;
+
         display: flex;
         justify-content: center;
-        height: 60%;
         pointer-events: none;
+        margin: 5px 0px;
       }
 
       .nav-bar-logo-heading-wrapper {
@@ -40,10 +43,17 @@
         align-items: center;
         justify-content: center;
 
-        .nav-bar-logo-heading {
+        a {
+          cursor: pointer;
+          z-index: 8;
           font-size: 13px;
           font-weight: lighter;
-          pointer-events: none;
+          text-decoration: none;
+          color: black;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            color: $primaryColor;
+          }
         }
       }
     }
