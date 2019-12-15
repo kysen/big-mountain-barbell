@@ -29,6 +29,17 @@ const InstaFeed = () => {
 
   return (
     <div className="insta-feed-container">
+      <div className="insta-feed-title">
+        Follow us on{" "}
+        <a
+          className="instagram-link"
+          href="https://www.instagram.com/bigmountainbarbell/"
+          target="_blank"
+        >
+          Instagram!
+        </a>
+      </div>
+
       <div className="insta-posts-wrapper">{hiThere(postsArray)}</div>
     </div>
   );
