@@ -8,7 +8,7 @@
       background-image: url("https://static.wixstatic.com/media/6f02ec_b10f3b7375404595843e149a976d5bad~mv2.jpg/v1/fill/w_845,h_1080,al_c,q_85/6f02ec_b10f3b7375404595843e149a976d5bad~mv2.webp");
       background-size: unset;
       background-repeat: repeat;
-      height: 200px;
+      height: fit-content;
 
       display: flex;
       justify-content: center;
@@ -19,9 +19,7 @@
         justify-content: center;
 
         .header-wrapper {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          margin-top: 20px;
           width: 80vw;
 
           .memberships-img-header {
@@ -33,11 +31,18 @@
             font-weight: bolder;
             @include no-select();
           }
-        }
+          .schedule-consoltation-button {
+            font-size: 1.6em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
 
-
-        .header1 {
-          // margin-top: 30vh;
+            &:hover {
+              background-color: rgb(0, 0, 0);
+            }
+          }
         }
       }
     }
