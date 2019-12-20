@@ -2,6 +2,7 @@
   .nav-bar-container {
     height:225px;
     .nav-bar-wrapper {
+      position: relative;
       .nav-bar {
         flex-direction: column;
         align-items: center;
