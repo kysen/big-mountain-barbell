@@ -35,6 +35,7 @@ const InstaFeed = () => {
           className="instagram-link"
           href="https://www.instagram.com/bigmountainbarbell/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Instagram!
         </a>

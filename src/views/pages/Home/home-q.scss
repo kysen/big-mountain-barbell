@@ -2,7 +2,6 @@
   .home-container {
     .home-page-content {
       .reviews-container {
-        @include no-select();
         width: 70vw;
         padding: 110px 0 80px 0;
 
@@ -15,6 +14,7 @@
           justify-content: space-between;
           align-items: center;
           .stars {
+            @include no-select();
             width: 70vw;
             display: flex;
             flex-direction: row;

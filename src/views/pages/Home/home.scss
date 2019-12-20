@@ -10,7 +10,6 @@
     align-items: center;
 
     .reviews-container {
-      @include no-select();
       width: 70vw;
       padding: 110px 0 80px 0;
 
@@ -23,12 +22,12 @@
         justify-content: space-between;
         align-items: center;
         .stars {
+          @include no-select();
           width: 70vw;
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
           transition: 0.2s ease-in-out;
-
           .star {
             color: rgb(255, 153, 0);
             font-size: 6em;
