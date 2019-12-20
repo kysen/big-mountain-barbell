@@ -59,6 +59,27 @@
 
       .insta-feed-container {
         width: 90vw;
+
+
+        .insta-feed-title {
+          font-size: 2em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .instagram-link {
+            margin-left: 4px;
+            color: $primaryColor;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 1s ease-in-out;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
         .insta-posts-wrapper {
           .post-wrapper {
             width: 85vw;

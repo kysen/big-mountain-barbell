@@ -21,7 +21,7 @@
         padding: 50px 0px;
 
         .header {
-          font-size: 50px;
+          font-size: 40px;
           max-width: 70%;
           text-align: center;
         }
@@ -29,9 +29,17 @@
         .content {
           font-size: 18px;
           width: 70%;
+          margin: 20px 0px;
+
+          div {
+            a {
+              color: $primaryColor;
+              cursor: pointer;
+            }
+          }
 
           p {
-            margin-top: 20px;
+            margin: 20px 0px;
             width: 100%;
             .bold {
               font-weight: 600;
