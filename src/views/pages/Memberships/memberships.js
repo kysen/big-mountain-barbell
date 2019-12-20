@@ -6,11 +6,12 @@ const Memberships = () => {
       <div className="img-container">
         <div className="memberships-img">
           <div className="header-wrapper">
-            <h1 className="memberships-img-header header1">
-              GET&nbsp;YOUR&nbsp;GYM
-            </h1>
+            <h1 className="memberships-img-header">GET&nbsp;YOUR&nbsp;GYM</h1>
             <h1 className="memberships-img-header">MEMBERSHIP</h1>
             <h1 className="memberships-img-header">TODAY!</h1>
+            <button className="button">
+              Schedule Your Free Consoltation Today!
+            </button>
           </div>
         </div>
       </div>
