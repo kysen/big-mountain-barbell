@@ -49,6 +49,7 @@ const Home = () => {
               <a
                 className="reviews-here"
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.google.com/search?q=bigmountainbarbell+google+reviews&rlz=1C1CHBF_enUS839US839&oq=bigmountainbarbell+google+reviews&aqs=chrome..69i57.9279j0j7&sourceid=chrome&ie=UTF-8#lrd=0x87528862c59104b7:0x11c2551e25dfc20d,1,,,"
               >
                 here

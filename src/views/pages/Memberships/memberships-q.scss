@@ -50,7 +50,6 @@
       background-color: rgba(0, 0, 0, 0.61);
       backdrop-filter: blur(70px);
       transition: 0.4s ease-in-out;
-      @include no-select();
 
       .info-all {
         padding: 20px;
