@@ -4,7 +4,7 @@ const Facility = () => {
   return (
     <div className="facility-container">
       <div className="facility-content-container">
-        <div className="facility-info">
+        {/* <div className="facility-info">
           <h1>Facility</h1>
           <p>
             Equipment: 19 Squat Racks, Powerlifting Monolift, Chains, bands for
@@ -28,9 +28,7 @@ const Facility = () => {
           </p>
           <p>Home of ChiroMovement Muscle & Joint Clinic</p>
           <p>*Good Vibes are FREE*</p>
-        </div>
-        <br />
-
+        </div> */}
         <div className="mission">
           <h1>Our Mission</h1>
           <p>
