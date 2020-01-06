@@ -1,16 +1,21 @@
 import React from "react";
+import Modal from "../../../components/Modal/Modal";
+
 
 const Memberships = () => {
+  const [open, setOpen] = React.useState(false);
+
   return (
     <div className="memberships-container">
       <div className="img-container">
         <div className="memberships-img">
           <div className="header-wrapper">
-            <h1 className="memberships-img-header header1">
-              GET&nbsp;YOUR&nbsp;GYM
-            </h1>
+            <h1 className="memberships-img-header">GET&nbsp;YOUR&nbsp;GYM</h1>
             <h1 className="memberships-img-header">MEMBERSHIP</h1>
             <h1 className="memberships-img-header">TODAY!</h1>
+            <div className="schedule-consoltation-button" onClick={setOpen}>
+              Schedule Your Free Consoltation Today!
+            </div>
           </div>
         </div>
       </div>
@@ -49,6 +54,8 @@ const Memberships = () => {
           <p className="bold">See you at BMB! ​</p>
         </div>
       </div>
+      <Modal open={open} close={() => setOpen(false)} header="Contact" />
+
     </div>
   );
 };

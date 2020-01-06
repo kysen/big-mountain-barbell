@@ -18,8 +18,11 @@
   .hype-video-container {
     position: fixed;
     z-index: -1;
+
     .hype-video {
       height: 100vh;
+      filter: brightness(70%)
+      
     }
   }
 
