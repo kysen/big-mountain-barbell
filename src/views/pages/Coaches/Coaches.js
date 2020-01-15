@@ -23,6 +23,11 @@ const chris_mcgrail = require("../../../assets/images/coaches/chris_mcgrail.jpg"
 const Coaches = ({ history }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  const handleClick = (routy) => {
+    window.scrollTo(0,0)
+    history.push(routy)
+  }
+
   const coaches = [
     {
       name: "Andy Mower",
@@ -139,7 +144,7 @@ const Coaches = ({ history }) => {
               }}
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
-              onClick={() => history.push(`${coach.route}`)}
+              onClick={() => handleClick(coach.route)}
             >
               <div className="coaches-desktop">
                 <Motion
