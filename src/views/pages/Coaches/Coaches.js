@@ -16,6 +16,9 @@ const nicky_barz = require("../../../assets/images/coaches/nicky_barz.jpg");
 const sami_clements = require("../../../assets/images/coaches/sami_clements.png");
 const taylor = require("../../../assets/images/coaches/taylor.JPG");
 const braden = require("../../../assets/images/coaches/braden.jpg");
+const ariana_browne = require("../../../assets/images/coaches/ariana_browne.jpg");
+const christian_niederhauser = require("../../../assets/images/coaches/christian_niederhauser.jpg");
+const chris_mcgrail = require("../../../assets/images/coaches/chris_mcgrail.jpg");
 
 const Coaches = ({ history }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -100,6 +103,21 @@ const Coaches = ({ history }) => {
       name: "Braden",
       img: braden,
       route: "braden"
+    },
+    {
+      name: "Ariana Browne",
+      img: ariana_browne,
+      route: "ariana-browne"
+    },
+    {
+      name: "Christian Niederhauser",
+      img: christian_niederhauser,
+      route: "christian-niederhauser"
+    },
+    {
+      name: "Chris McGrail",
+      img: chris_mcgrail,
+      route: "chris-mcgrail"
     }
   ];
 
