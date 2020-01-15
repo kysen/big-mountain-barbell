@@ -13,8 +13,8 @@ const Memberships = () => {
             <h1 className="memberships-img-header">GET&nbsp;YOUR&nbsp;GYM</h1>
             <h1 className="memberships-img-header">MEMBERSHIP</h1>
             <h1 className="memberships-img-header">TODAY!</h1>
-            <div className="schedule-consoltation-button" onClick={setOpen}>
-              Schedule Your Free Consoltation Today!
+            <div className="schedule-consultation-button" onClick={setOpen}>
+              Schedule Your Free Consultation Today!
             </div>
           </div>
         </div>
