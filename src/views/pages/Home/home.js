@@ -59,7 +59,6 @@ const Home = () => {
           </div>
         </div>
         <InstaFeed />
-
         <Modal open={open} close={() => setOpen(false)} header="Contact" />
       </div>
     </div>

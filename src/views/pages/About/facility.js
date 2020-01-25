@@ -1,35 +1,14 @@
 import React from "react";
+import TourVid from "./tour-vid";
+import ModalVideo from "react-modal-video";
 
 const Facility = () => {
+  const [youtubeOpen, setYoutubeOpen] = React.useState(false);
+
   return (
     <div className="facility-container">
       <div className="facility-content-container">
-        {/* <div className="facility-info">
-          <h1>Facility</h1>
-          <p>
-            Equipment: 19 Squat Racks, Powerlifting Monolift, Chains, bands for
-            Powerlifting training, 3 Olympic Weightlifting Platforms outfitted
-            with complete Eleiko women's and men's barbell and plate sets, Jerk
-            Blocks, 3 Deadlift Platforms, Forza Bench, Powerlifting Bench with
-            Band Attachment hooks, Specialized Barbells (Texas Squat, Deadlift
-            and Power Bars, EliteFTS Safety Bar, Duffalo Bar, Ohio Deadlift Bar
-            & Power Bar), Reverse Hyperextension Machine, GHD, PitShark Belted
-            Squat, EliteFTS Combo Rack, 2 Texas Strength System Combo Racks, Leg
-            Press, Trap Bar, Pull Up Bars, Turf with Prowlers and Sleds, Battle
-            Ropes, Jungle Pulley System (2 seated rows, 2 lat pulldowns,
-            crossover cable, high/low cables), Dumbbells from 2.5-85 pounds
-            (heavier dumbbells coming soon), Kettlebells from 5-80 pounds, Rogue
-            Foam Plyo Boxes and more.*
-          </p>
-          <br />
-          <p>
-            Cardio Equipment: Stepmill, 2 Treadmills, 5 Rowers, 3 Exercise
-            Bikes.
-          </p>
-          <p>Home of ChiroMovement Muscle & Joint Clinic</p>
-          <p>*Good Vibes are FREE*</p>
-        </div> */}
-        <div className="mission">
+        <div>
           <h1>Our Mission</h1>
           <p>
             Is to provide a safe, effective, and positive training environment
@@ -38,8 +17,9 @@ const Facility = () => {
           </p>
         </div>
         <br />
+        <TourVid setYoutubeOpen={setYoutubeOpen} />
 
-        <div className="info">
+        <div>
           <h1>About</h1>
           <p>
             We have always believed that the time you set aside for training is
@@ -74,7 +54,39 @@ const Facility = () => {
             equipment and facility in the valley-- come train at BMB!
           </p>
         </div>
+
+        {/* <div className="facility-info">
+          <h1>Facility</h1>
+          <p>
+            Equipment: 19 Squat Racks, Powerlifting Monolift, Chains, bands for
+            Powerlifting training, 3 Olympic Weightlifting Platforms outfitted
+            with complete Eleiko women's and men's barbell and plate sets, Jerk
+            Blocks, 3 Deadlift Platforms, Forza Bench, Powerlifting Bench with
+            Band Attachment hooks, Specialized Barbells (Texas Squat, Deadlift
+            and Power Bars, EliteFTS Safety Bar, Duffalo Bar, Ohio Deadlift Bar
+            & Power Bar), Reverse Hyperextension Machine, GHD, PitShark Belted
+            Squat, EliteFTS Combo Rack, 2 Texas Strength System Combo Racks, Leg
+            Press, Trap Bar, Pull Up Bars, Turf with Prowlers and Sleds, Battle
+            Ropes, Jungle Pulley System (2 seated rows, 2 lat pulldowns,
+            crossover cable, high/low cables), Dumbbells from 2.5-85 pounds
+            (heavier dumbbells coming soon), Kettlebells from 5-80 pounds, Rogue
+            Foam Plyo Boxes and more.*
+          </p>
+          <br />
+          <p>
+            Cardio Equipment: Stepmill, 2 Treadmills, 5 Rowers, 3 Exercise
+            Bikes.
+          </p>
+          <p>Home of ChiroMovement Muscle & Joint Clinic</p>
+          <p>*Good Vibes are FREE*</p>
+        </div> */}
       </div>
+      <ModalVideo
+        channel="youtube"
+        isOpen={youtubeOpen}
+        videoId="eKEgbMwg8BU"
+        onClose={() => setYoutubeOpen(false)}
+      />
     </div>
   );
 };

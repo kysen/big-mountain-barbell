@@ -7,10 +7,9 @@ import Facility from "./facility";
 const About = () => {
   return (
     <div className="about-container">
-      <TourVid />
-      <Content />
-      <Gallery />
       <Facility />
+      {/* <Content /> */}
+      <Gallery />
     </div>
   );
 };
