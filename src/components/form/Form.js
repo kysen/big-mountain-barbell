@@ -19,7 +19,7 @@ const Form = ({ footer, body, close }) => {
         "https://us-central1-exposure-increase.cloudfunctions.net/api/v1/emails",
         {
           subject: `Website Outreach - ${form.name}`,
-          to: "jacobdman5@gmail.com",
+          to: "bigmountainbarbell@gmail.com",
           text,
         },
       );
