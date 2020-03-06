@@ -25,7 +25,14 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 const App = () => {
   const [currentContent, setCurrentContent] = React.useState("Home");
 
-  const pages = ["/", "ABOUT", "MEMBERSHIPS", "SERVICES", "COACHES"];
+  const pages = [
+    "/",
+    "ABOUT",
+    "MEMBERSHIPS",
+    "SERVICES",
+    "COACHES",
+    "FIT CLUB",
+  ];
 
   return (
     <div className="App">

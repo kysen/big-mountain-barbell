@@ -13,8 +13,10 @@ const NavbarTab = props => {
           : "nav-bar-button-invisible-active"
       }
       exact
-      to={props.tab.toLowerCase()}
-      onClick={() => {props.setScrollTrigger(true)}}
+      to={props.tab.replace(/\s+/g, "-").toLowerCase()}
+      onClick={() => {
+        props.setScrollTrigger(true);
+      }}
     >
       {props.tab === "/" ? "HOME" : props.tab}
     </NavLink>
