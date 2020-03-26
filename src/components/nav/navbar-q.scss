@@ -1,6 +1,6 @@
 @media only screen and (max-width: 768px) {
   .nav-bar-container {
-    height:225px;
+    height: 225px;
     .nav-bar-wrapper {
       position: relative;
       .nav-bar {
@@ -23,9 +23,12 @@
           order: 3;
           justify-content: center;
           .nav-bar-button {
-            font-size: 0.8em;
+            font-size: 0.7em;
+            font-weight: 700;
+
             height: 0px;
             padding: 15px 5px;
+            white-space: nowrap;
 
             &:hover {
               border-bottom-left-radius: 0px;
@@ -34,7 +37,9 @@
           }
 
           .nav-bar-button-invisible {
-            font-size: 0.8em;
+            font-size: 0.7em;
+            white-space: nowrap;
+            font-weight: 700;
             height: 0px;
             padding: 15px 5px;
           }
@@ -56,7 +61,7 @@
           order: 2;
           margin: 20px;
           width: 150px;
-
+          padding: 0px;
           .icon-wrapper {
             width: calc(100% / 3);
             height: 10px;

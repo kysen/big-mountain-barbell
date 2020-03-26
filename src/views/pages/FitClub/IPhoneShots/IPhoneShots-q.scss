@@ -1,0 +1,41 @@
+@media only screen and (max-width: 768px) {
+  .iphone-shots-container {
+    width: 80vw;
+    //   display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    .iphone-shots-text-left {
+      width: inherit;
+      .app-title {
+        padding-bottom: 30px;
+        font-size: 2.5rem;
+      }
+      .app-description {
+        font-size: 1.2rem;
+      }
+    }
+    .fade {
+      width: inherit;
+      display: flex;
+      flex-direction: column;
+      .react-slideshow-container {
+        display: flex;
+        .react-slideshow-fade-wrapper {
+          .react-slideshow-fade-images-wrap {
+            margin-right: none;
+            div {
+              .each-fade {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .iphone-image {
+                  width: 80vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

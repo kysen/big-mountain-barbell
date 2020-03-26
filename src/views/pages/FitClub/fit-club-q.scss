@@ -3,10 +3,17 @@
   .fit-club-container {
     width: 90vw;
     .four-programs-container {
-      padding-top: 25px;
-      width: 80vw;
-      .program-option {
+      margin-top: 50px;
+
+      .section-title {
+        text-align: center;
+        font-size: 2.6rem;
+      }
+      .four-programs-wrapper {
         width: 80vw;
+        .program-option {
+          width: 80vw;
+        }
       }
     }
   }
