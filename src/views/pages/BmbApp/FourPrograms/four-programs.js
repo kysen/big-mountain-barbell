@@ -3,13 +3,63 @@ import React from "react";
 const FourPrograms = () => {
   return (
     <div className="four-programs-container">
-      <div className="section-title">Fit Club Programs</div>
+      {/* <div className="section-title">Fit Club Programs</div> */}
       <div className="four-programs-wrapper">
+        {/*  */}
+        <div className="program-option bigger-centered-option">
+          <div className="program-title">BMB Home</div>
+          <div className="price">
+            <div className="money">$</div>
+            <div className="numbers cross">25 </div>
+            <div className="numbers"> Free</div>
+            <div className="per-month">/per month</div>
+          </div>
+          <div className="program-description">
+            <div className="description-paragraph">
+              Make the most of your time in quarantine. Build you work capacity,
+              lean body mass and endurance through fast paced supersets,
+              circuits and optional running segments programmed weekly. All you
+              need is your bodyweight and minimal home workout equipment!
+            </div>
+            <div className="description-paragraph centered">
+              For the month of April we are giving FREE home workouts{" "}
+            </div>{" "}
+          </div>
+          <div className="what-to-expect">
+            {" "}
+            <div className="wte-title">What to Expect:</div>
+            <div className="wte-items">
+              <div className="wte-item">
+                <div className="wte-item-head">Pace:</div>
+                <div className="wte-item-paragraph">Generally fast-paced</div>
+              </div>
+              <div className="wte-item">
+                <div className="wte-item-head">Style:</div>
+                <div className="wte-item-paragraph">
+                  If you like incorporating circuits, supersets, AMRAPS and
+                  sports conditioning to your strength training, you’ll LOVE BMB
+                  Strength and Conditioning program.
+                </div>
+              </div>
+              <div className="wte-item">
+                <div className="wte-item-head">Duration:</div>
+                <div className="wte-item-paragraph">60-75 minutes</div>
+              </div>
+              <div className="wte-item">
+                <div className="wte-item-head">Frequency:</div>
+                <div className="wte-item-paragraph">
+                  4-5x per week with optional conditioning and mobility sessions{" "}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*  */}
         <div className="program-option">
           <div className="program-title">Strength & Conditioning</div>
           <div className="price">
             <div className="money">$</div>
-            <div className="numbers">29</div>
+            <div className="numbers">25</div>
             <div className="per-month">/per month</div>
           </div>
           <div className="program-description">
@@ -65,7 +115,7 @@ const FourPrograms = () => {
           <div className="program-title">Powerbuilding</div>
           <div className="price">
             <div className="money">$</div>
-            <div className="numbers">29</div>
+            <div className="numbers">25</div>
             <div className="per-month">/per month</div>
           </div>
           <div className="program-description">
@@ -172,7 +222,7 @@ const FourPrograms = () => {
           <div className="program-title">Fitbliss Barbell Club</div>
           <div className="price">
             <div className="money">$</div>
-            <div className="numbers">29</div>
+            <div className="numbers">25</div>
             <div className="per-month">/per month</div>
           </div>
           <div className="program-description">

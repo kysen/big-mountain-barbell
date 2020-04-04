@@ -20,7 +20,7 @@ const Services = () => {
         image={oneOnOne}
         title="Big Mountain Barbell Fit Club"
         learnMore={"Learn More"}
-        url={"./fit-club"}
+        url={"./bmb-app"}
         setOpen={setOpen}
         content={
           <div className="content">
@@ -34,7 +34,7 @@ const Services = () => {
             </div>
           </div>
         }
-        pricing="$29/hr"
+        pricing="$25/hr"
       />
       <ServiceItem
         image={oneOnOne}

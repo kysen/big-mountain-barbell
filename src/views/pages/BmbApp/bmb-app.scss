@@ -1,4 +1,4 @@
-.fit-club-container {
+.bmb-app-container {
   width: 70vw;
   display: flex;
   flex-direction: column;
@@ -76,6 +76,21 @@
                 min-width: 90px;
               }
             }
+          }
+        }
+      }
+
+      .bigger-centered-option {
+        width: 100%;
+        .price {
+          .cross {
+            text-decoration: line-through;
+          }
+        }
+        .program-description {
+          .centered {
+            text-align: center;
+            font-weight: 700;
           }
         }
       }
