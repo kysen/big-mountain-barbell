@@ -5,6 +5,7 @@ import Home from "./pages/Home/home";
 import About from "./pages/About/about";
 import Memberships from "./pages/Memberships/memberships";
 import Services from "./pages/Services/services";
+import BmbApp from "./pages/BmbApp/bmb-app";
 import Coaches from "./pages/Coaches/Coaches";
 import AndyMower from "./pages/Coaches/AndyMower";
 import AnnekeCannon from "./pages/Coaches/AnnekeCannon";
@@ -34,6 +35,7 @@ const Switchy = () => {
         <Route path="/about" component={About} />
         <Route path="/memberships" component={Memberships} />
         <Route path="/services" component={Services} />
+        <Route path="/bmb-app" component={BmbApp} />
         <Route path="/coaches" component={Coaches} />
         <Route path="/andy-mower" component={AndyMower} />
         <Route path="/anneke-cannon" component={AnnekeCannon} />

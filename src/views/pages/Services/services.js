@@ -18,6 +18,26 @@ const Services = () => {
     <div className="services-container">
       <ServiceItem
         image={oneOnOne}
+        title="Big Mountain Barbell Fit Club"
+        learnMore={"Learn More"}
+        url={"./bmb-app"}
+        setOpen={setOpen}
+        content={
+          <div className="content">
+            <div>
+              Personal training workouts written by top industry coaches and
+              delivered straight to your phone through the Big Mountain Barbell
+              App! Whether you’re an experienced lifter or just getting started,
+              you can do our lifting classes anytime, anywhere with the
+              guidance, accountability and support you need to achieve the
+              results you want! (link out to the BMB Fit Club tab)
+            </div>
+          </div>
+        }
+        pricing="$25/hr"
+      />
+      <ServiceItem
+        image={oneOnOne}
         title="One-On-One Personal Training"
         learnMore={"Contact Us"}
         setOpen={setOpen}
