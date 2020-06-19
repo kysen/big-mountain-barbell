@@ -42,7 +42,7 @@ const Erika = () => {
         open={open}
         close={() => setOpen(false)}
         header="Contact"
-        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Ben Anderson.\n\nPlease contact me at your earliest convenience`}
+        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Erika.\n\nPlease contact me at your earliest convenience`}
       />
     </div>
   );
