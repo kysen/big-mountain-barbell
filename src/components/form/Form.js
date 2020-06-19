@@ -4,7 +4,7 @@ import axios from "axios";
 const Form = ({ footer, body, close }) => {
   const [form, setForm] = useState({});
 
-  useEffect(() => {
+  useEffect((form) => {
     setForm({ ...form, body });
   }, [body]);
 
