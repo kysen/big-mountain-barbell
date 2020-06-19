@@ -45,7 +45,7 @@ const Home = () => {
           </div>
           <div className="total">
             <h1>
-              95 Reviews click{" "}
+              106 Google Reviews click{" "}
               <a
                 className="reviews-here"
                 target="_blank"
