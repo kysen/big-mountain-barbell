@@ -102,12 +102,12 @@ const Coaches = ({ history }) => {
       route: "sami-clements"
     },
     {
-      name: "Taylor",
+      name: "Taylor Vigil",
       img: taylor,
       route: "taylor"
     },
     {
-      name: "Braden",
+      name: "Braden Jenkins",
       img: braden,
       route: "braden"
     },
@@ -132,7 +132,7 @@ const Coaches = ({ history }) => {
       route: "zach-gee"
     },
     {
-      name: "Erika",
+      name: "Erika Roberge",
       img: erika,
       route: "erika"
     }

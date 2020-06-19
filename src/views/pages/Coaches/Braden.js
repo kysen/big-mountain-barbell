@@ -6,7 +6,7 @@ const Braden = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="coach-root">
-      <h1>Braden</h1>
+      <h1>Braden Jenkins</h1>
       <div className="coach-divider" />
       <div
         className="coach-image"
@@ -81,7 +81,7 @@ const Braden = () => {
         open={open}
         close={() => setOpen(false)}
         header="Contact"
-        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Braden.\n\nPlease contact me at your earliest convenience`}
+        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Braden Jenkins.\n\nPlease contact me at your earliest convenience`}
       />
     </div>
   );

@@ -6,7 +6,7 @@ const Taylor = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="coach-root">
-      <h1>Taylor</h1>
+      <h1>Taylor Vigil</h1>
       <div className="coach-divider" />
       <div
         className="coach-image"
@@ -65,7 +65,7 @@ const Taylor = () => {
         open={open}
         close={() => setOpen(false)}
         header="Contact"
-        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Taylor.\n\nPlease contact me at your earliest convenience`}
+        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Taylor Vigil.\n\nPlease contact me at your earliest convenience`}
       />
     </div>
   );

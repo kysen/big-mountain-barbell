@@ -6,7 +6,7 @@ const Erika = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="coach-root">
-      <h1>Erika</h1>
+      <h1>Erika Roberge</h1>
       <div className="coach-divider" />
       <div
         style={{
@@ -42,7 +42,7 @@ const Erika = () => {
         open={open}
         close={() => setOpen(false)}
         header="Contact"
-        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Erika.\n\nPlease contact me at your earliest convenience`}
+        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Erika Roberge.\n\nPlease contact me at your earliest convenience`}
       />
     </div>
   );
