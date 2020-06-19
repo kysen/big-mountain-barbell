@@ -19,6 +19,8 @@ const braden = require("../../../assets/images/coaches/braden.jpg");
 const ariana_browne = require("../../../assets/images/coaches/ariana_browne.jpg");
 const christian_niederhauser = require("../../../assets/images/coaches/christian_niederhauser.jpg");
 const chris_mcgrail = require("../../../assets/images/coaches/chris_mcgrail.jpg");
+const erika = require("../../../assets/images/coaches/erika-square.jpg")
+const zach_gee = require("../../../assets/images/coaches/zach_gee.jpg")
 
 const Coaches = ({ history }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -123,6 +125,16 @@ const Coaches = ({ history }) => {
       name: "Chris McGrail",
       img: chris_mcgrail,
       route: "chris-mcgrail"
+    },
+    {
+      name: "Zach Gee",
+      img: zach_gee,
+      route: "zach-gee"
+    },
+    {
+      name: "Erika",
+      img: erika,
+      route: "erika"
     }
   ];
 
