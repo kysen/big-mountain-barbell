@@ -62,21 +62,21 @@ const Coaches = ({ history }) => {
     //   img: anneke_cannon,
     //   route: "anneke-cannon"
     // },
-    {
-      name: "Hillary Goldstein",
-      img: hill_goldstein,
-      route: "hill-goldstein",
-    },
-    {
-      name: "Jason Gonzales",
-      img: jason_gonzales,
-      route: "jason-gonzales",
-    },
-    {
-      name: "Katie Baretela",
-      img: katie_baretela,
-      route: "katie-baretela",
-    },
+    // {
+    //   name: "Hillary Goldstein",
+    //   img: hill_goldstein,
+    //   route: "hill-goldstein",
+    // },
+    // {
+    //   name: "Jason Gonzales",
+    //   img: jason_gonzales,
+    //   route: "jason-gonzales",
+    // },
+    // {
+    //   name: "Katie Baretela",
+    //   img: katie_baretela,
+    //   route: "katie-baretela",
+    // },
     {
       name: "Lynndsey Eldridge",
       img: lynndsey_eldridge,
@@ -92,11 +92,11 @@ const Coaches = ({ history }) => {
       img: michelle_carlson,
       route: "michelle-carlson",
     },
-    {
-      name: "Nicky Barz",
-      img: nicky_barz,
-      route: "nicky-barz",
-    },
+    // {
+    //   name: "Nicky Barz",
+    //   img: nicky_barz,
+    //   route: "nicky-barz",
+    // },
     {
       name: "Sami Clements",
       img: sami_clements,
