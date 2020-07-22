@@ -3,10 +3,14 @@ import axios from "axios";
 
 const Form = ({ footer, body, close }) => {
   const [form, setForm] = useState({});
+  const [sent, setSent] = useState(false);
 
-  useEffect((form) => {
-    setForm({ ...form, body });
-  }, [body]);
+  useEffect(
+    (form) => {
+      setForm({ ...form, body });
+    },
+    [body]
+  );
 
   const update = ({ name, value }) => {
     setForm({ ...form, [name]: value });
@@ -21,31 +25,36 @@ const Form = ({ footer, body, close }) => {
           subject: `Website Outreach - ${form.name}`,
           to: "bigmountainbarbell@gmail.com",
           text,
-        },
+        }
       );
       console.log(result);
     } catch (e) {
       console.log(e);
     }
-    close();
+    // close();
+    setSent(true);
   };
 
   return (
     <div className={footer ? "footer-form" : "form-root"}>
-      <input name="name" placeholder="Name" onChange={e => update(e.target)} />
+      <input
+        name="name"
+        placeholder="Name"
+        onChange={(e) => update(e.target)}
+      />
       <input
         name="email"
         placeholder="Email"
-        onChange={e => update(e.target)}
+        onChange={(e) => update(e.target)}
       />
       <input
         name="phone"
         placeholder="Phone"
-        onChange={e => update(e.target)}
+        onChange={(e) => update(e.target)}
       />
       <textarea
         name="body"
-        onChange={e => update(e.target)}
+        onChange={(e) => update(e.target)}
         placeholder="Message"
         rows={footer ? 5 : 10}
         value={form.body}
@@ -58,6 +67,16 @@ const Form = ({ footer, body, close }) => {
           />
         </div>
         <p>SEND</p>
+      </div>
+      <div
+        style={{
+          display: sent ? "flex" : "none",
+          color: "white",
+          paddingTop: 2,
+          transition: ".3s ease-in-out",
+        }}
+      >
+        SENT
       </div>
     </div>
   );

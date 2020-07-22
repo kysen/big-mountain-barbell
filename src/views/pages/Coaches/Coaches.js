@@ -19,42 +19,43 @@ const braden = require("../../../assets/images/coaches/braden.jpg");
 const ariana_browne = require("../../../assets/images/coaches/ariana_browne.jpg");
 const christian_niederhauser = require("../../../assets/images/coaches/christian_niederhauser.jpg");
 const chris_mcgrail = require("../../../assets/images/coaches/chris_mcgrail.jpg");
-const erika = require("../../../assets/images/coaches/erika-square.jpg")
-const zach_gee = require("../../../assets/images/coaches/zach_gee.jpg")
+const erika = require("../../../assets/images/coaches/erika-square.jpg");
+const zach_gee = require("../../../assets/images/coaches/zach_gee.jpg");
+const brad_stucky = require("../../../assets/images/coaches/brad_stucky.jpg");
 
 const Coaches = ({ history }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleClick = (routy) => {
-    window.scrollTo(0,0)
-    history.push(routy)
-  }
+    window.scrollTo(0, 0);
+    history.push(routy);
+  };
 
   const coaches = [
     {
       name: "Andy Mower",
       img: andy_mower,
-      route: "andy-mower"
+      route: "andy-mower",
     },
     {
       name: "Anneke Cannon",
       img: anneke_cannon,
-      route: "anneke-cannon"
+      route: "anneke-cannon",
     },
     {
       name: "Ben Anderson",
       img: ben_anderson,
-      route: "ben-anderson"
+      route: "ben-anderson",
     },
     {
       name: "Cecily Lewis",
       img: cecily_lewis,
-      route: "cecily-lewis"
+      route: "cecily-lewis",
     },
     {
       name: "Devan Nielsen",
       img: devan_nielsen,
-      route: "devan-nielsen"
+      route: "devan-nielsen",
     },
     // {
     //   name: "Anneke Cannon",
@@ -64,78 +65,83 @@ const Coaches = ({ history }) => {
     {
       name: "Hillary Goldstein",
       img: hill_goldstein,
-      route: "hill-goldstein"
+      route: "hill-goldstein",
     },
     {
       name: "Jason Gonzales",
       img: jason_gonzales,
-      route: "jason-gonzales"
+      route: "jason-gonzales",
     },
     {
       name: "Katie Baretela",
       img: katie_baretela,
-      route: "katie-baretela"
+      route: "katie-baretela",
     },
     {
       name: "Lynndsey Eldridge",
       img: lynndsey_eldridge,
-      route: "lynndsey-eldridge"
+      route: "lynndsey-eldridge",
     },
     {
       name: "Megan Forrest",
       img: megan_forrest,
-      route: "megan-forrest"
+      route: "megan-forrest",
     },
     {
       name: "Michelle Carlson",
       img: michelle_carlson,
-      route: "michelle-carlson"
+      route: "michelle-carlson",
     },
     {
       name: "Nicky Barz",
       img: nicky_barz,
-      route: "nicky-barz"
+      route: "nicky-barz",
     },
     {
       name: "Sami Clements",
       img: sami_clements,
-      route: "sami-clements"
+      route: "sami-clements",
     },
     {
       name: "Taylor Vigil",
       img: taylor,
-      route: "taylor"
+      route: "taylor",
     },
     {
       name: "Braden Jenkins",
       img: braden,
-      route: "braden"
+      route: "braden",
     },
     {
       name: "Ariana Browne",
       img: ariana_browne,
-      route: "ariana-browne"
+      route: "ariana-browne",
     },
     {
       name: "Christian Niederhauser",
       img: christian_niederhauser,
-      route: "christian-niederhauser"
+      route: "christian-niederhauser",
     },
     {
       name: "Chris McGrail",
       img: chris_mcgrail,
-      route: "chris-mcgrail"
+      route: "chris-mcgrail",
     },
     {
       name: "Zach Gee",
       img: zach_gee,
-      route: "zach-gee"
+      route: "zach-gee",
     },
     {
       name: "Erika Roberge",
       img: erika,
-      route: "erika"
-    }
+      route: "erika",
+    },
+    {
+      name: "Brad Stucky",
+      img: brad_stucky,
+      route: "brad-stucky",
+    },
   ];
 
   return (
@@ -152,7 +158,7 @@ const Coaches = ({ history }) => {
                 backgroundImage: `url(${coach.img})`,
                 backgroundPosition: "50% 50%",
                 backgroundSize: "cover",
-                backgroundRepeat: "no-repeat"
+                backgroundRepeat: "no-repeat",
               }}
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
@@ -164,15 +170,15 @@ const Coaches = ({ history }) => {
                   style={{
                     y: spring(hoveredIndex === i ? 0 : 300, {
                       stiffness: 50,
-                      damping: 12
-                    })
+                      damping: 12,
+                    }),
                   }}
                 >
-                  {style => (
+                  {(style) => (
                     <div
                       className="coaches-item-name"
                       style={{
-                        transform: `translateY(${style.y}px)`
+                        transform: `translateY(${style.y}px)`,
                       }}
                     >
                       <h1>{coach.name}</h1>

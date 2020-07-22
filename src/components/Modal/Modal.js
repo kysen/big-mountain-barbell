@@ -10,7 +10,7 @@ const Modal = ({ open, close, header = "", body, actions }) => {
     >
       <div className="modal-paper">
         <h1 className="modal-header">{header}</h1>
-        <div className="modal-body" onClick={e => e.stopPropagation()}>
+        <div className="modal-body" onClick={(e) => e.stopPropagation()}>
           <Form body={body} close={close} />
         </div>
         {actions && actions}
