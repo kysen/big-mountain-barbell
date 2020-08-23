@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import Modal from "../../../components/Modal/Modal";
-const brad_stucky = require("../../../assets/images/coaches/brad_stucky.jpg");
+const brad_stuckey = require("../../../assets/images/coaches/brad_stuckey.jpg");
 
 const BenAnderson = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="coach-root">
-      <h1>Brad Stucky</h1>
+      <h1>Brad Stuckey</h1>
       <div className="coach-divider" />
       <div
         className="coach-image"
         style={{
-          backgroundImage: `url(${brad_stucky})`,
+          backgroundImage: `url(${brad_stuckey})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
@@ -52,7 +52,7 @@ const BenAnderson = () => {
         open={open}
         close={() => setOpen(false)}
         header="Contact"
-        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Brad Stucky.\n\nPlease contact me at your earliest convenience`}
+        body={`Dear Big Mountain Barbell Team,\n\nI am interested in working with Brad Stuckey.\n\nPlease contact me at your earliest convenience`}
       />
     </div>
   );
