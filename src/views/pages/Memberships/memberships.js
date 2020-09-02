@@ -28,11 +28,9 @@ const Memberships = () => {
         <div className="sec2 info-all">$25 Membership Set Up Fee</div>
         <ul className="sec3 info-all">
           <li>Month to Month - $69/month </li>
-          <li>3 Month Contract - $59/month</li>
-          <li>6 Month Contract - $49/month</li>
-          <li>1 Year Membership paid up front - $480</li>
-          <li>6 Month Membership paid up front - $270 </li>
-          <li>3 Month Membership paid up front - $160 </li>
+          <li>6 Month Contract - $59/month</li>
+          <li>12 Month Contract - $49/month</li>
+          <li>1 Year Membership paid up front - $540</li>
           <li>Single Day Drop in $10/day ($5 on Sunday)</li>
         </ul>
         <div className="sec4 info-all">
